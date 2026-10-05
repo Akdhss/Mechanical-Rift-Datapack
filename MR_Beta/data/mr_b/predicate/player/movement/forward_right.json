@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:all_of",
+  "terms": {
+    "type": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "minecraft:type_specific/player": {
+        "input": {
+          "forward": true,
+          "backward": false,
+          "left": false,
+          "right": true
+        }
+      }
+    }
+  }
+}

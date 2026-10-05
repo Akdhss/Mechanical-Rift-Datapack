@@ -1,0 +1,1 @@
+give @s netherite_sword[custom_name="Headhunter",rarity=epic,enchantments={"mr_b:custom_weapon/headhunter/whisper":1},swing_animation={type:"stab"},use_cooldown={seconds:1,cooldown_group:nondroppable},custom_data={scope_available:true}] 1

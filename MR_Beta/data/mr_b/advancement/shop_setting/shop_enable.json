@@ -1,0 +1,11 @@
+{
+  "criteria": {
+    "use": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "mr_b:mechanics/shop_enable"
+  },
+  "sends_telemetry_event": false
+}

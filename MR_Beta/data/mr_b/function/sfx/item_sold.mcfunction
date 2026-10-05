@@ -1,0 +1,9 @@
+playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ 1 1.2
+playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ 1 1.4
+playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ 1 1.6
+playsound minecraft:block.note_block.chime master @s ~ ~ ~ 0.7 1.8
+playsound minecraft:entity.villager.trade master @s ~ ~ ~ 0.6 1
+playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ 1 1.3
+playsound minecraft:entity.player.levelup master @s ~ ~ ~ 1 1.5
+playsound minecraft:block.amethyst_block.resonate master @s ~ ~ ~ 0.7 1.2
+playsound minecraft:block.beacon.activate master @s ~ ~ ~ 0.5 1.8

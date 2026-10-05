@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "check_item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "mr_b:general/lobby_menu/menu_on"
+  },
+  "sends_telemetry_event": false
+}

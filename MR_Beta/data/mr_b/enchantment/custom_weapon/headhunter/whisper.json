@@ -1,0 +1,37 @@
+{
+  "description": "Whisper",
+  "supported_items": ["minecraft:netherite_sword",
+  "minecraft:diamond_sword"],
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:post_piercing_attack": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "mr_b:custom_weapon/headhunter/raycast/start"
+        }
+      }
+    ],
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "mr_b:custom_weapon/headhunter/apply"
+        }
+      }
+    ]
+  }
+}

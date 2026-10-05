@@ -1,0 +1,71 @@
+{
+  "anvil_cost": 2,
+  "description": {
+    "text": "cool enchant"
+  },
+  "effects": {
+    "minecraft:location_changed": [
+
+      {
+        "requirements": {
+            "type": "enchantment_active_check",
+            "active": false
+        },
+        "effect": {
+          "type": "run_function",
+          "function": "mr_b:ability/axe/cleaving_whirlwind/rotation"        
+        }
+      },
+      
+      {
+        
+        "requirements": {
+            "type": "enchantment_active_check",
+            "active": false
+        },
+        "effect": {
+          "type": "minecraft:apply_impulse",
+          "direction": [
+            0,
+            0.1,
+            1
+          ],
+          "coordinate_scale": [
+            1,
+            1,
+            1.25
+          ],
+          "magnitude": {
+            "type": "linear",
+            "base": 2,
+            "per_level_above_first":0.1
+          }
+        }
+      },
+      {
+        "requirements": {
+            "type": "enchantment_active_check",
+            "active": false
+        },
+        "effect": {
+          "type": "run_function",
+          "function": "mr_b:ability/axe/cleaving_whirlwind/macro_jump_init"          
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 25,
+    "per_level_above_first": 8
+  },
+  "max_level": 3,
+  "min_cost": {
+    "base": 5,
+    "per_level_above_first": 8
+  },
+  "slots": [
+    "any"
+  ],
+  "supported_items": "minecraft:saddle",
+  "weight": 5
+}

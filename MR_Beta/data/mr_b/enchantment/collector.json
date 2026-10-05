@@ -1,0 +1,22 @@
+{
+  "description": "Collector",
+  "exclusive_set": [],
+  "supported_items": [
+    "minecraft:diamond_helmet",
+    "netherite_helmet"
+  ],
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "head"
+  ]
+}

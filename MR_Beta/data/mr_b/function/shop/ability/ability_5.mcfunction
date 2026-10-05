@@ -1,0 +1,5 @@
+title @s actionbar {text:"-- You have bought Divinity --",bold:true,color:"gold"}
+scoreboard players remove @s mr_shop_player_currency 300
+
+
+give @s potion[potion_contents={custom_color:15333398},custom_name=[{"text":"Divinity","italic":false}],max_stack_size=64,lore=[[{"text":"Use to bring back an ally from the other side."}]],rarity=epic,consumable={consume_seconds:1000000000,animation:bow,has_consume_particles:0b},custom_data={ability:true}]

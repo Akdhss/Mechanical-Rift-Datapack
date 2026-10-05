@@ -1,0 +1,1 @@
+execute at @s run function mr_b:enchant/crossbow/bloom_shot/bloom_apply

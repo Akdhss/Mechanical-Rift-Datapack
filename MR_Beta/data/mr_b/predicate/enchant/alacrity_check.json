@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:all_of",
+  "terms": {
+    "type": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "minecraft:equipment": {
+        "mainhand": {
+          "predicates": {
+            "minecraft:custom_data": {
+              "enchant_alacrity": true
+            }
+          }
+        }
+      }
+    }
+  }
+}

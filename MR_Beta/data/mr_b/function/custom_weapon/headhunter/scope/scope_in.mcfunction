@@ -1,0 +1,1 @@
+attribute @s movement_speed modifier add scope_mvspd -0.75 add_multiplied_total

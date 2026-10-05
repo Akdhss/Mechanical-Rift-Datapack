@@ -1,0 +1,1 @@
+scoreboard players add .distance global_range 1000

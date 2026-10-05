@@ -1,0 +1,14 @@
+execute as @e[name=player_spawn] at @s run summon area_effect_cloud ~ ~-0.5 ~ {Passengers:[{id:blaze,Tags:["wave_mob","pathing_mob","landing","mr_unassigned"]},{id:blaze,Tags:["wave_mob","pathing_mob","landing","mr_unassigned"]},{id:blaze,Tags:["wave_mob","pathing_mob","landing","mr_unassigned"]},{id:blaze,Tags:["wave_mob","pathing_mob","landing","mr_unassigned"]}]}
+kill @e[type=area_effect_cloud]
+
+execute as @e[name=player_spawn] if score @s mr_difficulty matches 2 as @e[tag=landing,type=blaze] run attribute @s attack_speed modifier add blaze_attack_speed 1 add_multiplied_base
+execute as @e[name=player_spawn] if score @s mr_difficulty matches 3 as @e[tag=landing,type=blaze] run attribute @s attack_speed modifier add blaze_attack_speed 1.5 add_multiplied_base
+execute as @e[name=player_spawn] if score @s mr_difficulty matches 4 as @e[tag=landing,type=blaze] run attribute @s attack_speed modifier add blaze_attack_speed 2 add_multiplied_base
+
+
+execute store result score @e[tag=mr_unassigned] mr_wave_loc_random run random value 1..4
+execute as @e[tag=mr_unassigned] if score @s mr_wave_loc_random matches 1 run tag @s add enemy_spawn_1
+execute as @e[tag=mr_unassigned] if score @s mr_wave_loc_random matches 2 run tag @s add enemy_spawn_2
+execute as @e[tag=mr_unassigned] if score @s mr_wave_loc_random matches 3 run tag @s add enemy_spawn_3
+execute as @e[tag=mr_unassigned] if score @s mr_wave_loc_random matches 4 run tag @s add enemy_spawn_4
+execute as @e[tag=mr_unassigned] run function mr_b:enemy_wave/enemy_loc

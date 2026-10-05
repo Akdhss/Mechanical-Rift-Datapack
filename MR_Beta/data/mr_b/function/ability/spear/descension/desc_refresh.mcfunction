@@ -1,0 +1,3 @@
+scoreboard players remove @s mr_ability_desc_refresh 20
+title @s actionbar [{text:"-- Descension Refreshed! --",color:"gold"}]
+give @s potion[potion_contents={custom_color:16770196},custom_name=[{"text":"Descension","italic":false}],max_stack_size=64,lore=[[{"text":"Use to ascend and gain a taste of heaven."}]],rarity=epic,consumable={consume_seconds:1000000000,animation:bow,has_consume_particles:0b},custom_data={ability:true}]

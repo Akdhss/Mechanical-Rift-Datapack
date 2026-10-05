@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "updraft": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:shield"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "mr_b:player/shield_use"
+  },
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "ability": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": "{ability:true}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "mr_b:ability/check"
+  }
+}

@@ -1,0 +1,10 @@
+playsound minecraft:entity.generic.explode master @a ~ ~ ~ 1.5 0.6
+playsound minecraft:entity.dragon_fireball.explode master @a ~ ~ ~ 1.5 0.5
+playsound minecraft:entity.lightning_bolt.thunder master @a ~ ~ ~ 1.5 0.8
+playsound minecraft:entity.warden.sonic_boom master @a ~ ~ ~ 1.5 0.6
+playsound minecraft:block.bell.resonate master @a ~ ~ ~ 1.2 0.4
+playsound minecraft:ambient.cave master @a ~ ~ ~ 1 0.3
+playsound minecraft:block.fire.ambient master @a ~ ~ ~ 1 0.7
+playsound minecraft:block.lava.pop master @a ~ ~ ~ 1 0.6
+playsound minecraft:entity.warden.sonic_boom master @a ~ ~ ~ 1 0.5
+playsound minecraft:entity.lightning_bolt.thunder master @a ~ ~ ~ 1 0.7

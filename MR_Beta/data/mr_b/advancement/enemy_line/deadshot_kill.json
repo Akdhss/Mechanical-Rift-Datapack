@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "check_item": {
+      "trigger": "minecraft:entity_killed_player",
+      "conditions": {
+        "killing_blow": {
+          "tags": [],
+          "source_entity": {
+            "nbt": "{Tags:[\"deadshot\"]}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "mr_b:random_event/base_event/deadshot/line"
+  },
+  "sends_telemetry_event": false
+}

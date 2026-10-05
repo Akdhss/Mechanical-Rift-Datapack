@@ -1,0 +1,33 @@
+{
+  "description": "Agile",
+  "supported_items": [
+    "minecraft:netherite_boots",
+    "diamond_boots"
+  ],
+    "exclusive_set": [
+  ],
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "feet"
+  ],
+  "effects": {
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "mr_b:enchant/armor/boots/agile/agile"
+        }
+      }
+    ]
+  }
+}

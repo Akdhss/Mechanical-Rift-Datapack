@@ -1,0 +1,1 @@
+function mr_b:ability/sword/guiding_wind/macro_jump with storage mr_b:launch jump

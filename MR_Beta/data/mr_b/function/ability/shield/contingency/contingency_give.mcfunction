@@ -1,0 +1,3 @@
+#scoreboard players remove @s mr_ability_desc_refresh 20
+title @s actionbar [{text:"-- Contingency Refreshed! --",color:"gold"}]
+give @s potion[potion_contents={custom_color:8782047},custom_name=[{"text":"Contingency","italic":false}],max_stack_size=64,lore=[[{"text":"Use to set down temporary dominion over a territory where enemy projectiles will not reach you."}]],rarity=epic,consumable={consume_seconds:1000000000,animation:bow,has_consume_particles:0b},custom_data={ability:true}]

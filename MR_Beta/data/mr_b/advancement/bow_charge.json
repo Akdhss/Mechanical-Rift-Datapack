@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "updraft": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:bow"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "mr_b:player/bow_charging"
+  },
+  "sends_telemetry_event": false
+}

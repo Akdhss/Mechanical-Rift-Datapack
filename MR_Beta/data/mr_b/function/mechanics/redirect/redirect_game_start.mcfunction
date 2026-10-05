@@ -1,0 +1,1 @@
+execute as @e[name=player_spawn,type=marker,limit=1] run function mr_b:mechanics/game_start

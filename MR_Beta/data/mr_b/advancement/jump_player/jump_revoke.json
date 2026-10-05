@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "holding_jump": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:type_specific/player": {
+              "input": {
+                "jump": false
+              }
+            }
+          }
+      }}
+    }
+  },
+  "rewards": {
+    "function": "mr_b:enchant/armor/boots/cloudstep/revoke_jump"
+  }
+}

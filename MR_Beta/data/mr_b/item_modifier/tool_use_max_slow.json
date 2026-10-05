@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:set_components",
+      "components": {
+        "minecraft:use_effects": {
+          "can_sprint": false,
+          "speed_multiplier": 0
+        }
+      }
+    }
+  ]
+}
