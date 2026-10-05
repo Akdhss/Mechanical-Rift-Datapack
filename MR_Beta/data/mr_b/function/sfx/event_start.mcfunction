@@ -1,0 +1,9 @@
+playsound minecraft:entity.warden.sonic_boom master @s ~ ~ ~ 1 0.8
+playsound minecraft:entity.lightning_bolt.thunder master @s ~ ~ ~ 0.8 1
+playsound minecraft:block.bell.resonate master @s ~ ~ ~ 0.6 0.7
+playsound minecraft:block.respawn_anchor.deplete master @s ~ ~ ~ 0.8 0.6
+playsound minecraft:entity.evoker.prepare_attack master @s ~ ~ ~ 0.7 0.8
+playsound minecraft:block.beacon.deactivate master @s ~ ~ ~ 1 0.5
+playsound minecraft:entity.warden.sonic_boom master @s ~ ~ ~ 1 0.7
+playsound minecraft:block.respawn_anchor.charge master @s ~ ~ ~ 0.6 0.5
+playsound minecraft:block.bell.use master @s ~ ~ ~ 0.5 0.6

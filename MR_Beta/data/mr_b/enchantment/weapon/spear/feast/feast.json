@@ -1,0 +1,89 @@
+{
+  "description": "Feast",
+  "supported_items": [
+    "minecraft:netherite_spear",
+    "diamond_spear",
+    "minecraft:netherite_axe",
+    "diamond_axe",
+    "minecraft:netherite_sword",
+    "diamond_sword"
+  ],
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "mr_b:enchant/spear/feast"
+        }
+      }
+    ],
+    "minecraft:post_attack": [
+      {
+        "requirements": {
+          "type": "minecraft:entity_properties",
+          "entity": "attacker",
+          "predicate": {
+            "slots": {
+              "weapon.mainhand": {
+                "items": [
+                  "minecraft:diamond_sword",
+                  "minecraft:netherite_sword"
+                ]
+              }
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:apply_mob_effect",
+          "to_apply": "minecraft:saturation",
+          "min_duration": 0.03,
+          "max_duration": 0.03,
+          "min_amplifier": 1,
+          "max_amplifier": 1
+        },
+        "enchanted": "attacker",
+        "affected": "attacker"
+      },
+      {
+        "requirements": {
+          "type": "minecraft:entity_properties",
+          "entity": "attacker",
+          "predicate": {
+            "slots": {
+              "weapon.mainhand": {
+                "items": [
+                  "minecraft:diamond_axe",
+                  "minecraft:netherite_axe"
+                ]
+              }
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:apply_mob_effect",
+          "to_apply": "minecraft:saturation",
+          "min_duration": 0.03,
+          "max_duration": 0.03,
+          "min_amplifier": 3,
+          "max_amplifier": 3
+        },
+        "enchanted": "attacker",
+        "affected": "attacker"
+      }
+    ]
+  }
+}

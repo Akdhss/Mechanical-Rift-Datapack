@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "enchantment": {
+      "trigger": "minecraft:using_item",
+      "type": {
+        "item": {
+          "predicates": {
+            "minecraft:enchantments": [
+              {
+                "enchantments": "mr_d:enchant_dummy"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "mr_b:shop/enchant/upgrade_enchant/enchant_check"
+  }
+}

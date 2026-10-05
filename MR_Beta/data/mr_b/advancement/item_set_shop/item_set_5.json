@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "use": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+  },
+  "sends_telemetry_event": false
+}

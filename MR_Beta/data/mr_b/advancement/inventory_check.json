@@ -1,0 +1,36 @@
+{
+  "criteria": {
+    "check_item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "diamond_boots",
+              "netherite_boots",
+              "netherite_leggings",
+              "diamond_leggings",
+              "netherite_chestplate",
+              "diamond_chestplate",
+              "netherite_helmet",
+              "diamond_helmet",
+              "crossbow",
+              "bow",
+              "netherite_axe",
+              "diamond_axe",
+              "netherite_spear",
+              "diamond_spear",
+              "netherite_sword",
+              "diamond_sword",
+              "shield"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "mr_b:shop/player_inventory_check"
+  },
+  "sends_telemetry_event": false
+}

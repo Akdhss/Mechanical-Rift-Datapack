@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:set_components",
+      "components": {
+        "minecraft:consumable": {
+          "consume_seconds": 999999,
+          "animation": "crossbow",
+          "has_consume_particles": false
+        }
+      }
+    }
+  ]
+}

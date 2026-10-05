@@ -1,0 +1,23 @@
+{
+  "criteria": {
+    "holding_jump": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:type_specific/player": {
+              "input": {
+                "jump": true
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "mr_b:enchant/armor/boots/wind_bolt/detect_jump"
+  }
+}

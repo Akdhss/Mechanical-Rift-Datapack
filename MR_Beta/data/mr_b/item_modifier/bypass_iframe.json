@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:set_components",
+      "components": {
+        "minecraft:damage_type": "mr_b:blade_call"
+      }
+    }
+  ]
+}

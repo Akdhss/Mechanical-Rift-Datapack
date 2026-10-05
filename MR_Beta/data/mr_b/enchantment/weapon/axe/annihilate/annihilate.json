@@ -1,0 +1,62 @@
+{
+  "description": "Annihilate",
+  "exclusive_set": [],
+  "supported_items": [
+    "diamond_axe",
+    "netherite_axe"
+  ],
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:damage": [
+      {
+        "requirements": {
+          "type": "minecraft:inverted",
+          "term": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "nbt": "{Tags:[\"mr_annihilate_used\"]}"
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:add",
+          "value": 30
+        }
+      }
+    ],
+    "minecraft:post_attack": [
+      {
+        "requirements": {
+          "type": "minecraft:inverted",
+          "term": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "nbt": "{Tags:[\"mr_annihilate_used\"]}"
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "mr_b:enchant/axe/annihilate/annihilate"
+        },
+        "enchanted": "attacker",
+        "affected": "victim"
+      }
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "descension": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "components": {
+            "minecraft:potion_contents": {
+              "custom_color": 4669019
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "mr_b:shop/upgrade/armor_upgrade"
+  },
+  "sends_telemetry_event": false
+}

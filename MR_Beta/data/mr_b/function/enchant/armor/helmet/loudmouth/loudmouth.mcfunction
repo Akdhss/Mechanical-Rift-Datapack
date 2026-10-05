@@ -1,0 +1,1 @@
+execute if entity @s[tag=silenced] run scoreboard players remove @s mr_effect_silence_time 1

@@ -1,0 +1,9 @@
+playsound minecraft:entity.blaze.shoot master @s ~ ~5 ~ 1 0.7
+playsound minecraft:item.firecharge.use master @s ~ ~5 ~ 1 0.8
+playsound minecraft:block.fire.ambient master @s ~ ~5 ~ 0.8 0.6
+playsound minecraft:block.lava.pop master @s ~ ~5 ~ 0.7 0.5
+playsound minecraft:block.respawn_anchor.charge master @s ~ ~5 ~ 0.9 0.9
+playsound minecraft:entity.blaze.shoot master @s ~ ~5 ~ 0.9 0.6
+playsound minecraft:block.fire.ambient master @s ~ ~5 ~ 0.7 0.5
+playsound minecraft:block.lava.pop master @s ~ ~5 ~ 0.6 0.4
+playsound minecraft:item.firecharge.use master @s ~ ~5 ~ 0.8 0.9

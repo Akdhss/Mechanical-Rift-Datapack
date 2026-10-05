@@ -1,0 +1,56 @@
+{
+  "description": "Ratio",
+  "exclusive_set": [],
+  "supported_items": [
+    "diamond_axe",
+    "netherite_axe"
+  ],
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:damage": [
+      {
+        "requirements": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "nbt": "{Tags:[\"mr_ratio_target\"]}"
+          }
+        },
+        "effect": {
+          "type": "minecraft:add",
+          "value": 30
+        }
+      }
+    ],
+    "minecraft:post_attack": [
+      {
+        "requirements": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "nbt": "{Tags:[\"mr_ratio_target\"]}"
+          }
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "mr_b:enchant/axe/ratio/ratio_hit"
+        },
+        "enchanted": "attacker",
+        "affected": "attacker"
+      }
+    ]
+  }
+}

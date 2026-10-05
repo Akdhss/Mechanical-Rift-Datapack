@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:set_components",
+      "components": {
+        "minecraft:piercing_weapon": {
+          "deals_knockback": false,
+          "dismounts": false
+        }
+      }
+    }
+  ]
+}

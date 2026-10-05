@@ -1,0 +1,9 @@
+playsound minecraft:block.beacon.ambient master @a ~ ~ ~ 1.6 0.6
+playsound minecraft:entity.warden.nearby_close master @a ~ ~ ~ 1.8 0.7
+playsound minecraft:block.respawn_anchor.charge master @a ~ ~ ~ 1.7 0.9
+playsound minecraft:block.note_block.bit master @a ~ ~ ~ 1.8 1.8
+playsound minecraft:block.amethyst_cluster.hit master @a ~ ~ ~ 1.6 2.0
+playsound minecraft:entity.experience_orb.pickup master @a ~ ~ ~ 1.5 0.5
+playsound minecraft:item.crossbow.loading_end master @a ~ ~ ~ 1.9 0.7
+playsound minecraft:entity.warden.heartbeat master @a ~ ~ ~ 1.5 0.6
+playsound minecraft:block.beacon.power_select master @a ~ ~ ~ 1.8 0.5

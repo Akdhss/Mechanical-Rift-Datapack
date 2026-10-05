@@ -1,0 +1,10 @@
+playsound minecraft:block.note_block.pling master @a ~ ~ ~ 1 1.5
+playsound minecraft:block.amethyst_block.chime master @a ~ ~ ~ 0.6 1.8
+playsound minecraft:block.note_block.bit master @a ~ ~ ~ 1 0.8
+playsound minecraft:block.beacon.activate master @a ~ ~ ~ 0.7 1.2
+playsound minecraft:entity.glow_squid.squirt master @a ~ ~ ~ 0.8 1.4
+playsound minecraft:block.respawn_anchor.charge master @a ~ ~ ~ 0.5 1.6
+playsound minecraft:block.beacon.power_select master @a ~ ~ ~ 0.6 1.0
+playsound minecraft:block.amethyst_cluster.step master @a ~ ~ ~ 0.5 2.0
+playsound minecraft:block.note_block.pling master @a ~ ~ ~ 1 1.8
+playsound minecraft:block.note_block.hat master @a ~ ~ ~ 0.3 2

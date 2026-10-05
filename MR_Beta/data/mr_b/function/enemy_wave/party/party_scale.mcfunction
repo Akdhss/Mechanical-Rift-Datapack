@@ -1,0 +1,1 @@
+$attribute @s max_health modifier add player_max_health_scale $(whole).$(decimal) add_multiplied_total

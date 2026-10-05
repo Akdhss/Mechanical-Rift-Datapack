@@ -1,0 +1,34 @@
+{
+  "description": "Loudmouth",
+  "supported_items": [
+    "minecraft:diamond_helmet",
+    "minecraft:netherite_helmet"
+  ],
+  "exclusive_set":[
+    "mr_b:season"
+  ],
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "head"
+  ],
+  "effects": {
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "mr_b:enchant/armor/helmet/loudmouth/loudmouth"
+        }
+      }
+    ]
+  }
+}

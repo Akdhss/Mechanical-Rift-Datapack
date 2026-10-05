@@ -1,0 +1,71 @@
+{
+  "anvil_cost": 2,
+  "description": {
+    "text": "Wind Bolt"
+  },
+  "effects": {
+    "minecraft:location_changed": [
+
+      {
+        "requirements": {
+            "type": "enchantment_active_check",
+            "active": false
+        },
+        "effect": {
+          "type": "run_function",
+          "function": "mr_b:general/impulse/rotation"        
+        }
+      },
+      
+      {
+        
+        "requirements": {
+            "type": "enchantment_active_check",
+            "active": false
+        },
+        "effect": {
+          "type": "minecraft:apply_impulse",
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "coordinate_scale": [
+            1,
+            1,
+            1
+          ],
+          "magnitude": {
+            "type": "linear",
+            "base": 1,
+            "per_level_above_first":0.5
+          }
+        }
+      },
+      {
+        "requirements": {
+            "type": "enchantment_active_check",
+            "active": false
+        },
+        "effect": {
+          "type": "run_function",
+          "function": "mr_b:general/impulse/macro_jump_init"          
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 25,
+    "per_level_above_first": 8
+  },
+  "max_level": 255,
+  "min_cost": {
+    "base": 5,
+    "per_level_above_first": 8
+  },
+  "slots": [
+    "any"
+  ],
+  "supported_items": "minecraft:saddle",
+  "weight": 5
+}

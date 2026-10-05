@@ -1,0 +1,10 @@
+execute if block ~ ~-1 ~ red_wool run function mr_b:mechanics/mob_pathing
+execute if block ~ ~-1 ~ blue_wool run function mr_b:mechanics/mob_pathing
+execute if block ~ ~-1 ~ black_wool run function mr_b:mechanics/mob_pathing
+execute if block ~ ~-1 ~ white_wool run function mr_b:mechanics/mob_pathing
+execute if block ~ ~-2 ~ brown_wool run function mr_b:mechanics/mob_pathing
+execute if block ~ ~-2 ~ red_wool run function mr_b:mechanics/mob_pathing
+execute if block ~ ~-2 ~ blue_wool run function mr_b:mechanics/mob_pathing
+execute if block ~ ~-2 ~ black_wool run function mr_b:mechanics/mob_pathing
+execute if block ~ ~-2 ~ white_wool run function mr_b:mechanics/mob_pathing
+execute if block ~ ~-3 ~ brown_wool run function mr_b:mechanics/mob_pathing

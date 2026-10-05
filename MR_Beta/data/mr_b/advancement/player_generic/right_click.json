@@ -1,0 +1,36 @@
+{
+  "criteria": {
+    "right_click_check": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": "{scope_available:true}"
+          }
+        }
+      }
+    },
+    "menu": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "components": {
+            "minecraft:use_cooldown": {
+              "seconds": 1,
+              "cooldown_group": "menu_item"
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "right_click_check",
+      "menu"
+    ]
+  ],
+  "rewards": {
+    "function": "mr_b:player/right_click"
+  }
+}

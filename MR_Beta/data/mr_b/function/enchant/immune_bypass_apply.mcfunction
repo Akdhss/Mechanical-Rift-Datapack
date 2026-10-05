@@ -1,0 +1,1 @@
+item modify entity @s weapon.mainhand mr_b:bypass_iframe

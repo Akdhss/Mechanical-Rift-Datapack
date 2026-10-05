@@ -1,0 +1,1 @@
+function mr_b:enchant/armor/boots/wind_bolt/macro_jump with storage mr_b:launch jump

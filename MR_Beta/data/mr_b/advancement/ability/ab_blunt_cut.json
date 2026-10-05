@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "use_item": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          
+          "predicates": {
+            "minecraft:custom_data": {
+              "blunt_cut": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "mr_b:ability/axe/blunt_cut/blunt_cut_use"
+  }
+}

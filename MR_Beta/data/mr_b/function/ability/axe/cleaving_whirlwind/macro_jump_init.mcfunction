@@ -1,0 +1,1 @@
+function mr_b:ability/axe/cleaving_whirlwind/macro_jump with storage mr_b:launch jump
