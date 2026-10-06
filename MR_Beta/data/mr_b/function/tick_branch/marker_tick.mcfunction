@@ -28,7 +28,7 @@ execute if entity @s[tag=endless_enabled] if score @s mr_enemy_endless_time matc
 
 
 
-execute unless score @s mr_enemy_count matches 1.. if score @s mr_wave_delay matches 1.. at @s run bossbar set wave_delay players @a[team=rift_party]
+execute unless score @s[tag=!obj_storm] mr_enemy_count matches 1.. if score @s mr_wave_delay matches 1.. at @s run bossbar set wave_delay players @a[team=rift_party]
 execute if score @s mr_enemy_count matches 1.. if score @s mr_wave_delay matches 1.. at @s run bossbar set wave_delay players @a[tag=test]
 
 
@@ -44,8 +44,8 @@ execute if score @s mr_wave_delay matches 40 as @n[limit=999,team=rift_party,dis
 execute if score @s mr_wave_delay matches 60 as @n[limit=999,team=rift_party,distance=0..] at @s run function mr_b:sfx/start_ding
 
 
-execute if score @s mr_enemy_count matches 0 if score @s mr_wave_delay matches 0 run scoreboard players set @s mr_wave_delay 1000
-execute if score @s mr_enemy_count matches 0 if score @s mr_wave_delay matches 1.. run scoreboard players remove @s mr_wave_delay 1
+execute if score @s[tag=!objective_active] mr_enemy_count matches 0 if score @s mr_wave_delay matches 0 run scoreboard players set @s mr_wave_delay 1000
+execute if score @s[tag=!objective_active] mr_enemy_count matches 0 if score @s mr_wave_delay matches 1.. run scoreboard players remove @s mr_wave_delay 1
 execute if entity @s[tag=run_ongoing] if score @s mr_wave matches ..5 if score @s mr_enemy_count matches 0 if score @s mr_wave_delay matches 0 run function mr_b:enemy_wave/new_wave
 execute if entity @s[tag=!run_ongoing] if score @s mr_enemy_count matches 0 if score @s mr_wave_delay matches 0 run function mr_b:enemy_wave/wave_start
 
@@ -54,7 +54,7 @@ execute if entity @s[tag=run_ongoing] if entity @a[tag=party_dead,tag=!determina
 
 
 
-execute unless score @s mr_enemy_spawn matches 1.. if entity @s[tag=!wave_finished,tag=!wave_starting] if score @s mr_enemy_count matches 0 if score @s mr_wave_delay matches 1.. as @a[team=rift_party] run function mr_b:enemy_wave/end_wave
+execute unless score @s mr_enemy_spawn matches 1.. if entity @s[tag=!wave_finished,tag=!wave_starting,tag=!objective_active] if score @s mr_enemy_count matches 0 if score @s mr_wave_delay matches 1.. as @a[team=rift_party] run function mr_b:enemy_wave/end_wave
 
 
 execute if entity @s[tag=wave_starting] as @a[team=rift_party] if score @s player_death matches 1.. run function mr_b:mechanics/dead_respawn
@@ -71,7 +71,7 @@ bossbar set team_status players @a[team=rift_party,tag=!party_alive,tag=!party_d
 
 execute if score @s mr_wave_delay matches 999 if score @s mr_wave matches 5 run function mr_b:boss/boss_check
 
-execute if score @s mr_wave matches 5 if score @s mr_enemy_count matches 0 if entity @n[limit=999,tag=party_alive,distance=0..] run function mr_b:enemy_wave/floor_clear
+execute if score @s mr_wave matches 6 if score @s mr_enemy_count matches 0 if entity @n[limit=999,tag=party_alive,distance=0..] run function mr_b:enemy_wave/floor_clear
 
 execute if entity @s[tag=run_ongoing] store result bossbar wave_progress value run scoreboard players get @s mr_enemy_count
 
@@ -109,7 +109,14 @@ execute if entity @s[tag=backroom_map_origin_world_exclusive] run function mr_b:
 
 
 #objective
-execute if score @s[tag=!objective_active,tag=!objective_finished] mr_wave matches 3.. run function mr_b:objective/obj_check
+execute if score @s[tag=!objective_active,tag=!objective_finished] mr_wave matches 3.. if entity @e[tag=wave_mob] run function mr_b:objective/obj_check
+execute if entity @s[tag=objective_active] if score @s mr_wave matches ..5 if score @s mr_enemy_count matches ..60 run scoreboard players add @s mr_obj_endless 1
+execute if entity @s[tag=objective_active] if score @s mr_obj_endless matches 250.. run function mr_b:enemy_wave/endless_spawn
+execute if entity @s[tag=objective_active] if score @s mr_obj_endless matches 250.. run scoreboard players reset @s mr_obj_endless
+
+execute if entity @s[tag=objective_active] if score @s mr_obj_count matches ..0 run function mr_b:objective/spawning_disable
+
+execute if entity @s[tag=obj_storm] at @s run function mr_b:objective/storm/storm
 
 
 execute if entity @s[tag=wave_starting] unless entity @a[scores={mr_enchant_lily_time=1..}] run scoreboard objectives setdisplay sidebar.team.green mr_shop_player_currency

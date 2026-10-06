@@ -18,7 +18,7 @@ playsound minecraft:block.anvil.land hostile @s ~ ~ ~ 0.5 1.7
 
 
 tag @s add mr_stun
-scoreboard players set @s mr_effect_stun_time 20
+scoreboard players set @s mr_effect_stun_time 40
 execute as @s store result bossbar stun_effect max run scoreboard players get @s mr_effect_stun_time
 
 

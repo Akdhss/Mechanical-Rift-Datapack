@@ -35,6 +35,8 @@ execute as @e[name=player_spawn] run scoreboard players reset @s mr_wave_count
 execute as @e[name=player_spawn] run scoreboard players reset @s mr_event_time
 execute as @e[name=player_spawn] run scoreboard players reset @s mr_wave_delay
 execute as @e[name=player_spawn] run tag @s remove run_ongoing
+execute as @e[name=player_spawn] run function mr_b:objective/obj_clear
+
 execute as @a[team=rift_party] run scoreboard players reset @s player_death
 execute as @a[tag=party_alive] run tag @s remove party_alive
 execute as @a[tag=party_dead] run tag @s remove party_dead

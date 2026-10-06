@@ -1,8 +1,9 @@
 execute as @a[team=rift_party] run function mr_b:shop/item_sets/set_refresh
 
 ### initial effects ###
-execute as @a if items entity @s armor.chest *[enchantments~[{enchantments:"mr_b:armor/chest/gold_plating/gold_plating"}]] run effect give @s absorption infinite 9 true
+execute as @a[team=rift_party] if items entity @s armor.chest *[enchantments~[{enchantments:"mr_b:armor/chest/gold_plating/gold_plating"}]] run effect give @s absorption infinite 9 true
 
+execute as @e[name=player_spawn,limit=1] run tag @s remove objective_finished
 
 scoreboard players set @e[name=player_spawn,limit=1] mr_wave_delay 1000
 

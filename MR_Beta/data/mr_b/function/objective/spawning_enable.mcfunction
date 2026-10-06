@@ -1,0 +1,1 @@
+tag @e[name=player_spawn] add objective_active

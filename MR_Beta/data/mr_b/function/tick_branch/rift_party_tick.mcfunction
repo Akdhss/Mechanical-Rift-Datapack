@@ -276,6 +276,9 @@ execute if score @s mr_ability_null_command_pulse matches 1.. run function mr_b:
 
 execute if score @s mr_player_shield_hold matches 1.. if score @s mr_player_shield_use matches 0 run scoreboard players reset @s mr_player_shield_hold
 
+execute if entity @s[tag=storm_affected] run scoreboard players remove @s mr_obj_storm_effect 1
+execute if entity @s[tag=storm_affected] if score @s mr_obj_storm_effect matches ..1 run tag @s remove storm_affected
+
 
 #------------------------------------------------------- [ SHOP UI ] ------------------------------------------------------- 
 

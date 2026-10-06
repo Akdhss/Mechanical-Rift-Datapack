@@ -127,6 +127,10 @@ scoreboard objectives add mr_event_meteor_freq dummy
 scoreboard objectives add mr_event_hemo_time dummy
 
 scoreboard objectives add mr_obj_random dummy
+scoreboard objectives add mr_obj_endless dummy
+scoreboard objectives add mr_obj_count dummy
+scoreboard objectives add mr_obj_storm_duration dummy
+scoreboard objectives add mr_obj_storm_effect dummy
 
 scoreboard objectives add mr_boss_random dummy
 scoreboard objectives add mr_boss_max_hp dummy
@@ -328,3 +332,6 @@ bossbar set minecraft:double_tap_time color purple
 
 bossbar add double_tap_time_active [{"text":"Double Tap","bold":true,"color":"#f154f1"}]
 bossbar set minecraft:double_tap_time_active color pink
+
+bossbar add obj_storm [{"text":"Objective [ Storm ]","bold":true,"color":"#001ec7"}]
+bossbar set minecraft:obj_storm color blue

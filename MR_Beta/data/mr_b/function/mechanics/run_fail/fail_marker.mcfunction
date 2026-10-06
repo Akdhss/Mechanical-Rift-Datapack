@@ -11,4 +11,5 @@ bossbar remove boss_bar
 bossbar remove wave_progress
 bossbar remove ability_cd
 bossbar remove wave_delay
+function mr_b:objective/obj_clear
 
