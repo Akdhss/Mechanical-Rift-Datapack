@@ -122,7 +122,7 @@ execute if entity @s[tag=obj_storm] at @s run function mr_b:objective/storm/stor
 execute if entity @s[tag=wave_starting] unless entity @a[scores={mr_enchant_lily_time=1..}] run scoreboard objectives setdisplay sidebar.team.green mr_shop_player_currency
 execute if entity @s[tag=run_ongoing] unless entity @a[scores={mr_enchant_lily_time=1..}] run scoreboard objectives setdisplay sidebar.team.green mr_shop_player_currency
 
-
+#test
 #------------------------------------------------------- [ MENU TOGGLES ] ------------------------------------------------------- 
 
 
