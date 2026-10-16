@@ -106,6 +106,7 @@ scoreboard objectives add mr_special_enemy_mirror_link dummy
 scoreboard objectives add mr_special_enemy_sentinel_charge dummy
 scoreboard objectives add mr_special_enemy_sentinel_wind dummy
 scoreboard objectives add mr_special_enemy_spearman_charge dummy
+scoreboard objectives add mr_special_enemy_spearman_charge_random dummy
 
 scoreboard objectives add mr_player_count_kill minecraft.custom:minecraft.mob_kills
 scoreboard objectives add mr_player_count_damage_taken minecraft.custom:minecraft.damage_taken
