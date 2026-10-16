@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:any_of",
+  "terms": [
+    {
+      "type": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "minecraft:slots": {
+          "armor.*": {
+            "predicates": {
+              "minecraft:damage": {
+                "damage": {
+                  "min": 1
+                },
+                "durability": {
+                  "max": 100
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+posteffect remove @s blur

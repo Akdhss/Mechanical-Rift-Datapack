@@ -280,6 +280,8 @@ execute if entity @s[tag=storm_affected] run scoreboard players remove @s mr_obj
 execute if entity @s[tag=storm_affected] if score @s mr_obj_storm_effect matches ..1 run tag @s remove storm_affected
 
 
+execute if predicate mr_b:armor_check run title @s actionbar {text:"-- REPAIR ARMOR NOW!! --",bold:true,color:"red"}
+
 #------------------------------------------------------- [ SHOP UI ] ------------------------------------------------------- 
 
 

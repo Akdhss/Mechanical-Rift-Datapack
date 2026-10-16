@@ -1,7 +1,7 @@
 # warn-off-file target-selector-no-type
 execute as @a[tag=party_dead] run function mr_b:mechanics/dead_respawn
 
-scoreboard players add @e[name=player_spawn,distance=0..] mr_wave_count 1
+
 
 
 
@@ -33,11 +33,10 @@ tellraw @s {text:" ",bold:true,color:"gold"}
 tellraw @s {text:"----- WAVE FINISHED -----",bold:true,color:"gold"}
 tellraw @s {text:" ",bold:true,color:"gold"}
 
-tellraw @s ["",{text:"Wave: ",bold:true,color:"red"},{score:{name:"@e[name=player_spawn]",objective:"mr_wave_count"},color:"dark_red",bold:true}]
+tellraw @s ["",{text:"Next Wave: ",bold:true,color:"red"},{score:{name:"@e[name=player_spawn]",objective:"mr_wave_count"},color:"dark_red",bold:true}]
 tellraw @s {text:" ",bold:true,color:"gold"}
 
 function mr_b:enemy_wave/endwave_credit
-tellraw @s {text:" ",bold:true,color:"gold"}
 
 execute at @s run function mr_b:sfx/wave_end
 

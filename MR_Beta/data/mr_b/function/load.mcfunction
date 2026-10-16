@@ -131,6 +131,7 @@ scoreboard objectives add mr_obj_endless dummy
 scoreboard objectives add mr_obj_count dummy
 scoreboard objectives add mr_obj_storm_duration dummy
 scoreboard objectives add mr_obj_storm_effect dummy
+scoreboard objectives add mr_obj_storm_random dummy
 
 scoreboard objectives add mr_boss_random dummy
 scoreboard objectives add mr_boss_max_hp dummy

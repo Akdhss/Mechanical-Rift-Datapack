@@ -13,7 +13,7 @@ clear @s potion[potion_contents={custom_color:15300635}] 1
 
 tag @s add sanc_activate
 
-execute unless score @s mr_ability_castle_cd matches 1.. run scoreboard players set @s mr_ability_sanc_cd 600
+execute unless score @s mr_ability_sanc_cd matches 1.. run scoreboard players set @s mr_ability_sanc_cd 600
 scoreboard players add @s mr_ability_sanc_cd_count 1
 
 tellraw @a [{text:"[",bold:true,color:"dark_green"},{selector:"@a[tag=sanc_activate,limit=1]"},{text:"]",bold:true,color:"dark_green"},{text:" Blessings Incoming!",bold:false,color:"gold"}]

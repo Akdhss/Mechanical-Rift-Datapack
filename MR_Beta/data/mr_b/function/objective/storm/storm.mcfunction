@@ -1,5 +1,10 @@
 scoreboard players add @s mr_obj_storm_duration 1
 
+execute at @s if score @s mr_obj_storm_duration matches ..600 as @e[distance=..45,team=rift_party,tag=!storm_affected,type=player] run function mr_b:objective/storm/storm_inside
+execute at @s if score @s mr_obj_storm_duration matches 600..1200 as @e[distance=..35,team=rift_party,tag=!storm_affected,type=player] run function mr_b:objective/storm/storm_inside
+execute at @s if score @s mr_obj_storm_duration matches 1200..1800 as @e[distance=..25,team=rift_party,tag=!storm_affected,type=player] run function mr_b:objective/storm/storm_inside
+execute at @s if score @s mr_obj_storm_duration matches 1800..2400 as @e[distance=..15,team=rift_party,tag=!storm_affected,type=player] run function mr_b:objective/storm/storm_inside
+
 execute at @s if score @s mr_obj_storm_duration matches ..600 as @e[distance=45..,team=rift_party,tag=!storm_affected,type=player] run function mr_b:objective/storm/storm_effect
 execute at @s if score @s mr_obj_storm_duration matches 600..1200 as @e[distance=35..,team=rift_party,tag=!storm_affected,type=player] run function mr_b:objective/storm/storm_effect
 execute at @s if score @s mr_obj_storm_duration matches 1200..1800 as @e[distance=25..,team=rift_party,tag=!storm_affected,type=player] run function mr_b:objective/storm/storm_effect

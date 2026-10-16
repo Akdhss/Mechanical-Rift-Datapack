@@ -1,5 +1,6 @@
 # warn-off-file target-selector-no-type
 # warn-off-file execute-group
+execute at @s run tp @s ~ ~ ~ ~10 ~
 
 execute if entity @s[tag=newly_set_player_spawn] run function mr_b:set_placement/player_spawn_fix
 
@@ -53,6 +54,7 @@ execute if entity @s[tag=!run_ongoing] if score @s mr_enemy_count matches 0 if s
 execute if entity @s[tag=run_ongoing] if entity @a[tag=party_dead,tag=!determination_active] unless entity @a[tag=party_alive] run function mr_b:mechanics/run_fail
 
 
+execute unless score @s mr_enemy_spawn matches 1.. if entity @s[tag=!wave_finished,tag=!wave_starting,tag=!objective_active] if score @s mr_enemy_count matches 0 if score @s mr_wave_delay matches 1.. run scoreboard players add @e[name=player_spawn,distance=0..] mr_wave_count 1
 
 execute unless score @s mr_enemy_spawn matches 1.. if entity @s[tag=!wave_finished,tag=!wave_starting,tag=!objective_active] if score @s mr_enemy_count matches 0 if score @s mr_wave_delay matches 1.. as @a[team=rift_party] run function mr_b:enemy_wave/end_wave
 

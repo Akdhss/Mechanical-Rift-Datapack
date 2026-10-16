@@ -6,6 +6,7 @@ execute as @a[team=rift_party] at @s run playsound mr_b:ally_death master @s ~ ~
 execute as @a[tag=party_alive] if items entity @s armor.head *[enchantments~[{enchantments:"mr_b:armor/head/adrenaline/adrenaline"}]] run effect give @s absorption 10 2 true
 execute as @a[tag=party_alive] if items entity @s armor.head *[enchantments~[{enchantments:"mr_b:armor/head/adrenaline/adrenaline"}]] run effect give @s speed 10 1 true
 
+function mr_b:effect/cleanse/cleanse_effect
 
 execute as @s[tag=!determination_used] if items entity @s armor.chest *[enchantments~[{enchantments:"mr_b:armor/chest/determination/determination"}]] run return fail
 
