@@ -1,7 +1,7 @@
 attribute @s movement_speed modifier add stun_movement_speed -1 add_multiplied_total
 attribute @s jump_strength modifier add stun_jump_strength -1 add_multiplied_total
 
-
+posteffect add @s[tag=mr_stun] mr_b:effect/stun
 
 data merge entity @s {NoAI:1b,Silent:1b}
 
@@ -21,11 +21,11 @@ execute store result bossbar stun_effect value run scoreboard players get @s mr_
 
 
 
-particle dust_color_transition{from_color:[1.0,0.83,0.22],to_color:[0.7,0.61,0.0],scale:0.75} ~0.500 ~1.75 ~0.000 0 0 0 0 1 force
-particle dust_color_transition{from_color:[1.0,0.83,0.22],to_color:[0.7,0.61,0.0],scale:0.75} ~0.354 ~1.75 ~0.354 0 0 0 0 1 force
-particle dust_color_transition{from_color:[1.0,0.83,0.22],to_color:[0.7,0.61,0.0],scale:0.75} ~0.000 ~1.75 ~0.500 0 0 0 0 1 force
-particle dust_color_transition{from_color:[1.0,0.83,0.22],to_color:[0.7,0.61,0.0],scale:0.75} ~-0.354 ~1.75 ~0.354 0 0 0 0 1 force
-particle dust_color_transition{from_color:[1.0,0.83,0.22],to_color:[0.7,0.61,0.0],scale:0.75} ~-0.500 ~1.75 ~0.000 0 0 0 0 1 force
-particle dust_color_transition{from_color:[1.0,0.83,0.22],to_color:[0.7,0.61,0.0],scale:0.75} ~-0.354 ~1.75 ~-0.354 0 0 0 0 1 force
-particle dust_color_transition{from_color:[1.0,0.83,0.22],to_color:[0.7,0.61,0.0],scale:0.75} ~0.000 ~1.75 ~-0.500 0 0 0 0 1 force
-particle dust_color_transition{from_color:[1.0,0.83,0.22],to_color:[0.7,0.61,0.0],scale:0.75} ~0.354 ~1.75 ~-0.354 0 0 0 0 1 force
+particle dust_color_transition{from_color:[1.0,0.83,0.22],to_color:[0.7,0.61,0.0],scale:0.75} ~0.500 ~1.95 ~0.000 0 0 0 0 1 force
+particle dust_color_transition{from_color:[1.0,0.83,0.22],to_color:[0.7,0.61,0.0],scale:0.75} ~0.354 ~1.95 ~0.354 0 0 0 0 1 force
+particle dust_color_transition{from_color:[1.0,0.83,0.22],to_color:[0.7,0.61,0.0],scale:0.75} ~0.000 ~1.95 ~0.500 0 0 0 0 1 force
+particle dust_color_transition{from_color:[1.0,0.83,0.22],to_color:[0.7,0.61,0.0],scale:0.75} ~-0.354 ~1.95 ~0.354 0 0 0 0 1 force
+particle dust_color_transition{from_color:[1.0,0.83,0.22],to_color:[0.7,0.61,0.0],scale:0.75} ~-0.500 ~1.95 ~0.000 0 0 0 0 1 force
+particle dust_color_transition{from_color:[1.0,0.83,0.22],to_color:[0.7,0.61,0.0],scale:0.75} ~-0.354 ~1.95 ~-0.354 0 0 0 0 1 force
+particle dust_color_transition{from_color:[1.0,0.83,0.22],to_color:[0.7,0.61,0.0],scale:0.75} ~0.000 ~1.95 ~-0.500 0 0 0 0 1 force
+particle dust_color_transition{from_color:[1.0,0.83,0.22],to_color:[0.7,0.61,0.0],scale:0.75} ~0.354 ~1.95 ~-0.354 0 0 0 0 1 force

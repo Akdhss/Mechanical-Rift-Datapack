@@ -1,10 +1,11 @@
 # warn-off-file execute-group
 
-execute if score @s mr_special_enemy_spearman_charge matches 1 as @a[team=rift_party] at @s run playsound mr_b:enemy/spearman/spearman_engage master @s ~ ~ ~
+execute if score @s mr_special_enemy_spearman_charge matches 1 as @a[team=rift_party,distance=..32] at @s run playsound mr_b:enemy/spearman/spearman_engage master @s ~ ~ ~
 execute if score @s mr_special_enemy_spearman_charge matches 81 store result score @s mr_special_enemy_spearman_charge_random run random value 1..3
-execute at @s if score @s mr_special_enemy_spearman_charge_random matches 1 run playsound mr_b:enemy/spearman/spearman_charge master @a ~ ~ ~
-execute at @s if score @s mr_special_enemy_spearman_charge_random matches 2 run playsound mr_b:enemy/spearman/spearman_charge1 master @a ~ ~ ~
-execute at @s if score @s mr_special_enemy_spearman_charge_random matches 3 run playsound mr_b:enemy/spearman/spearman_charge2 master @a ~ ~ ~
+execute at @a[team=rift_party,distance=..32] if score @s mr_special_enemy_spearman_charge_random matches 1 run playsound mr_b:enemy/spearman/spearman_charge master @a ~ ~ ~
+execute at @a[team=rift_party,distance=..32] if score @s mr_special_enemy_spearman_charge_random matches 2 run playsound mr_b:enemy/spearman/spearman_charge1 master @a ~ ~ ~
+execute at @a[team=rift_party,distance=..32] if score @s mr_special_enemy_spearman_charge_random matches 3 run playsound mr_b:enemy/spearman/spearman_charge2 master @a ~ ~ ~
+
 execute if score @s mr_special_enemy_spearman_charge matches 81 run scoreboard players reset @s mr_special_enemy_spearman_charge_random
 
 execute unless score @s mr_special_enemy_spearman_charge matches 82.. run scoreboard players add @s mr_special_enemy_spearman_charge 1
