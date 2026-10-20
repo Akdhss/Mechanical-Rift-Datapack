@@ -24,3 +24,5 @@ The link below is the patch history for the Mechanical Rift project.
 This includes but not limited to: New content, Balancing, Changes, Reworks, Bug Fixes.
 https://docs.google.com/document/d/1ufcozEg-_-YLHPdwJ0ogID2QJ5jUULfazZb8_3n6pJw/edit?usp=sharing
 
+The link below is the compendium on where most information pertaining Mechanical Rift will be stored.
+https://docs.google.com/spreadsheets/d/1xdOd_pHUhhg4I5et3Tz-nDyb5OnC7p6CzkWcZJpHRbQ/edit?usp=sharing
