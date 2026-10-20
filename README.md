@@ -18,3 +18,9 @@ This marker is also the most important as most of the code of Mechanical Rift is
 
 
 NOTE: Setting up all markers is a REQUIREMENT as the game would not be able to run with it missing.
+
+
+The link below is the patch history for the Mechanical Rift project.
+This includes but not limited to: New content, Balancing, Changes, Reworks, Bug Fixes.
+https://docs.google.com/document/d/1ufcozEg-_-YLHPdwJ0ogID2QJ5jUULfazZb8_3n6pJw/edit?usp=sharing
+
