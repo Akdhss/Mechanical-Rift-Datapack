@@ -2,7 +2,7 @@ execute if score @s mr_ability_frost_touch_cd matches 1.. run return fail
 execute if entity @s[tag=silenced] run return fail
 clear @s potion[potion_contents={custom_color:122836}] 1
 
-scoreboard players set @s mr_ability_frost_touch_cd 30
+scoreboard players set @s mr_ability_frost_touch_cd 10
 
 tag @s add frost_touch
 

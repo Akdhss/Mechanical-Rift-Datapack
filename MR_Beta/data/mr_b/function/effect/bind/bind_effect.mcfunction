@@ -6,6 +6,7 @@ execute if score @s mr_effect_bind_time matches ..0 run function mr_b:effect/bin
 execute store result bossbar bind_effect value run scoreboard players get @s mr_effect_bind_time
 execute at @s if block ~ ~-.05 ~ air run tag @s add mr_ground
 
+posteffect add @s[tag=mr_bind] mr_b:effect/bind
 
 particle dust_color_transition{from_color:[0.0,0.71,0.8],to_color:[0.0,0.53,0.7],scale:0.75} ~0.5 ~0.25 ~0 0 0 0 0 1
 particle dust_color_transition{from_color:[0.0,0.71,0.8],to_color:[0.0,0.53,0.7],scale:0.75} ~0.46 ~0.25 ~0.19 0 0 0 0 1

@@ -1,1 +1,1 @@
-$damage @s $(damage) magic
+$damage @s $(damage) mr_b:true

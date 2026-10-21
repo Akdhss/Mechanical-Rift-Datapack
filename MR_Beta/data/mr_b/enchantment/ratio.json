@@ -36,6 +36,21 @@
       }
     ],
     "minecraft:post_attack": [
+      { 
+        "requirements": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "nbt": "{Tags:[\"mr_ratio_target\"]}"
+          }
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "mr_b:enchant/axe/ratio/ratio_shatter"
+        },
+        "enchanted": "attacker",
+        "affected": "victim"
+      },
       {
         "requirements": {
           "type": "minecraft:entity_properties",

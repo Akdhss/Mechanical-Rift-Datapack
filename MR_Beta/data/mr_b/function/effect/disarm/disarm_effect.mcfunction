@@ -12,7 +12,7 @@ execute if score @s mr_effect_disarm_time matches ..0 run function mr_b:effect/d
 execute store result bossbar disarm_effect value run scoreboard players get @s mr_effect_disarm_time
 
 
-
-
+execute if entity @s[tag=mr_stun] run return fail
+execute if entity @s[tag=mr_freeze] run return fail
 particle minecraft:sulfur_cube_goo ~ ~1 ~ .3 .5 .3 0 1
 particle minecraft:infested ~ ~1 ~ .3 .5 .3 0 1

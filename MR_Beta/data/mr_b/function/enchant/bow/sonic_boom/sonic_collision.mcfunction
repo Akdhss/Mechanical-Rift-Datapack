@@ -1,4 +1,5 @@
 damage @s 50 magic by @a[limit=1,tag=sonic_fire]
+tag @s add mr_shatter
 
 #playsound minecraft:entity.player.hurt_freeze master @a ~ ~ ~ 0.9 0.6
 #playsound minecraft:entity.wither.hurt master @a ~ ~ ~ 0.7 0.7

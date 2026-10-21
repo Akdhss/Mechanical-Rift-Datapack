@@ -20,8 +20,9 @@ particle minecraft:reverse_portal ~ ~1 ~ 0.6 1 0.6 0.03 45 force
 #particle minecraft:explosion_emitter ~ ~1 ~
 particle minecraft:poof ~ ~1 ~ 0.7 1 0.7 0.05 60 force
 
-
+tag @s add mr_shatter
 damage @s 250 mr_b:blade_call by @p[tag=blunt_cut_firing]
+
 
 tag @a[tag=blunt_cut_firing] add blunt_cut_hit
 

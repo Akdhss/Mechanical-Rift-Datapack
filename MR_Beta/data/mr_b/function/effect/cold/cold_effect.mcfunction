@@ -11,7 +11,8 @@ execute as @e[tag=mr_freeze] at @s run tp ~ ~ ~
 
 execute store result bossbar cold_effect value run scoreboard players get @s mr_effect_cold_time
 
-
+posteffect add @s[tag=!mr_freeze] mr_b:effect/cold
+posteffect remove @s[tag=!mr_freeze] mr_b:effect/freeze
 
 tag @s add mr_cold
 particle minecraft:snowflake ~ ~1 ~ 0.35 0.7 0.35 0.015 1 force

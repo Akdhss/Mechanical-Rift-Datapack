@@ -3,6 +3,7 @@
     "mr_b:blade_call",
     "mr_b:explosion",
     "mr_b:burning",
-    "mr_b:bleeding"
+    "mr_b:bleeding",
+    "mr_b:true"
   ]
 }

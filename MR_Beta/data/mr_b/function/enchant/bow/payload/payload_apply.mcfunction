@@ -1,7 +1,7 @@
 execute on origin run tag @s add payload_origin
 execute on attacker run tag @s add payload_origin
 
-
+execute at @s as @e[distance=..4,team=rift_enemy] run tag @s add mr_shatter
 execute at @s as @e[distance=..4,team=rift_enemy] run damage @s 20 mr_b:explosion by @n[tag=payload_origin]
 tag @e remove payload_origin
 
