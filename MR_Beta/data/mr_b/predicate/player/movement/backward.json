@@ -6,8 +6,10 @@
     "predicate": {
       "minecraft:type_specific/player": {
         "input": {
-          "forward": true,
-          "backward": true
+          "forward": false,
+          "backward": true,
+          "left": false,
+          "right": false
         }
       }
     }

@@ -1,4 +1,5 @@
-tag @e[tag=wave_mob,tag=!mutated,limit=5,tag=!boss,type=!player,tag=!relife,tag=!disappeared] add mutated
+tag @e[tag=wave_mob,tag=!special_attribute,limit=5,tag=!boss,type=!player] add mutated
+tag @e[tag=mutated,tag=!special_attribute] add special_attribute
 execute as @e[tag=wave_mob,tag=mutated] run attribute @s scale base set 1.25
 execute if score @s mr_difficulty matches 1..2 as @e[tag=wave_mob,tag=mutated] run attribute @s attack_damage modifier add attack_damage .5 add_multiplied_total
 execute if score @s mr_difficulty matches 1..2 as @e[tag=wave_mob,tag=mutated] run attribute @s attack_speed modifier add attack_speed .5 add_multiplied_total
