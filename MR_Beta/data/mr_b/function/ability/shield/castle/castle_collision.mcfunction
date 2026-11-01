@@ -30,5 +30,7 @@ clear @a[tag=castle_rook] potion[potion_contents={custom_color:1670752}] 1
 execute at @s run tp @a[tag=castle_rook] ^ ^ ^.2
 execute as @a[tag=castle_rook] at @s unless block ~ ~ ~ #mr_b:raycast_pass run tp @s ~ ~1 ~
 
-execute at @a[tag=castle_rook] as @e[distance=..4.5,team=rift_enemy] run data modify entity @s Motion set value [0f,1.2f,.0f]
+
+execute at @a[tag=castle_rook] as @e[distance=..4.5,team=rift_enemy] run rotate @s facing entity @p[tag=castle_rook]
+execute at @a[tag=castle_rook] as @e[distance=..4.5,team=rift_enemy] run item replace entity @s saddle with brick[enchantments={"mr_b:impulse/general_backward_impulse":4},equippable={slot:"saddle"}]
 execute at @a[tag=castle_rook] as @e[distance=..4.5,team=rift_enemy] run effect give @s slowness 5 2 true

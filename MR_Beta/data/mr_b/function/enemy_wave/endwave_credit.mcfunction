@@ -10,20 +10,23 @@ execute if entity @s[tag=class_rich] run tellraw @a [{"text":"V.I.P. Nitronic Bo
 execute if score @e[limit=1,distance=0..,name=player_spawn,type=marker] mr_player_misc_setting_1 matches 1 run scoreboard players add @s mr_shop_player_currency_diff 50
 execute if score @e[limit=1,distance=0..,name=player_spawn,type=marker] mr_player_misc_setting_2 matches 1 run scoreboard players add @s mr_shop_player_currency_diff 50
 execute if score @e[limit=1,distance=0..,name=player_spawn,type=marker] mr_player_misc_setting_3 matches 1 run scoreboard players add @s mr_shop_player_currency_diff 50
+execute if score @e[limit=1,distance=0..,name=player_spawn,type=marker] mr_player_misc_setting_4 matches 1 run scoreboard players add @s mr_shop_player_currency_diff 50
 
 
 tellraw @s ["",{text:"Wave Earnings: "},{score:{name:"@s",objective:"mr_shop_player_currency_base"},color:"gold"}]
 tellraw @s ["",{text:"Elimination Earnings: "},{score:{name:"@s",objective:"mr_shop_player_currency_kill"},color:"gold"}]
 tellraw @s ["",{text:"Class Bonus: "},{score:{name:"@s",objective:"mr_shop_player_currency_bonus"},color:"gold"}]
 tellraw @s ["",{text:"Modifier Bonus: "},{score:{name:"@s",objective:"mr_shop_player_currency_diff"},color:"gold"}]
-
+tellraw @s ["",{text:"Objective Bonus: "},{score:{name:"@s",objective:"mr_shop_player_currency_obj"},color:"gold"}]
 
 scoreboard players operation @s mr_shop_player_currency += @s mr_shop_player_currency_base
 scoreboard players operation @s mr_shop_player_currency += @s mr_shop_player_currency_kill
 scoreboard players operation @s mr_shop_player_currency += @s mr_shop_player_currency_bonus
 scoreboard players operation @s mr_shop_player_currency += @s mr_shop_player_currency_diff
+scoreboard players operation @s mr_shop_player_currency += @s mr_shop_player_currency_obj
 
 scoreboard players operation @s mr_shop_player_currency_base -= @s mr_shop_player_currency_base
 scoreboard players operation @s mr_shop_player_currency_kill -= @s mr_shop_player_currency_kill
 scoreboard players operation @s mr_shop_player_currency_bonus -= @s mr_shop_player_currency_bonus
 scoreboard players operation @s mr_shop_player_currency_diff -= @s mr_shop_player_currency_diff
+scoreboard players operation @s mr_shop_player_currency_obj -= @s mr_shop_player_currency_obj

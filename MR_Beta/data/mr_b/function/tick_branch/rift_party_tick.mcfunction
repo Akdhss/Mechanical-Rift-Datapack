@@ -90,8 +90,8 @@ execute if entity @s[tag=!party_alive,tag=!party_dead] if score @s ready_state m
 
 execute if entity @e[name=player_spawn,tag=run_ongoing,distance=0..,type=marker] if entity @s[tag=party_alive,distance=0..] if score @s player_death matches 1.. at @s run function mr_b:mechanics/active_death
 
-execute if entity @s[tag=party_alive,tag=party_healthy] if score @s mr_player_hp matches ..10 run function mr_b:player/critical_health_announcement
-execute if entity @s[tag=party_alive,tag=!party_healthy] if score @s mr_player_hp matches 11.. run function mr_b:player/critical_health_revoke
+execute if entity @s[tag=party_healthy] if score @s mr_player_hp matches ..10 run function mr_b:player/critical_health_announcement
+execute if entity @s[tag=!party_healthy] if score @s mr_player_hp matches 11.. run function mr_b:player/critical_health_revoke
 
 execute if score @s mr_ability_blunt_cd matches 1.. run scoreboard players remove @s mr_ability_blunt_cd 1
 
@@ -117,7 +117,7 @@ execute unless score @s mr_effect_disarm_time matches 0.. run scoreboard players
 
 
 
-execute if entity @e[tag=run_ongoing,distance=0..] run bossbar set wave_progress players @a[team=rift_party,distance=0..]
+execute if entity @e[tag=run_ongoing,distance=0..] if entity @e[tag=wave_mob] run bossbar set wave_progress players @a[team=rift_party,distance=0..]
 
 
 
@@ -281,6 +281,8 @@ execute if entity @s[tag=storm_affected] if score @s mr_obj_storm_effect matches
 
 
 execute if predicate mr_b:armor_check run title @s actionbar {text:"-- REPAIR ARMOR NOW!! --",bold:true,color:"red"}
+
+execute if entity @e[name=player_spawn,tag=!obj_extract,distance=0..,type=marker] run clear @s *[custom_data~{extract_item:true}]
 
 #------------------------------------------------------- [ SHOP UI ] ------------------------------------------------------- 
 

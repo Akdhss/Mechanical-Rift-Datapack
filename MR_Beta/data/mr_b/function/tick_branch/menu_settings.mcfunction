@@ -61,11 +61,13 @@ execute as @s[nbt={Item:{id:"minecraft:creeper_banner_pattern"}},distance=0..,ty
 execute as @s[nbt={Item:{components:{"minecraft:custom_data":{guaranteed_event:1b}}}},distance=0..,type=item] on origin run scoreboard players add @n[name=player_spawn,distance=0..,type=marker] mr_player_misc_setting_1 1
 execute as @s[nbt={Item:{components:{"minecraft:custom_data":{endless:1b}}}},distance=0..,type=item] on origin run scoreboard players add @n[name=player_spawn,distance=0..,type=marker] mr_player_misc_setting_2 1
 execute as @s[nbt={Item:{components:{"minecraft:custom_data":{announce_event:1b}}}},distance=0..,type=item] on origin run scoreboard players add @n[name=player_spawn,distance=0..,type=marker] mr_player_misc_setting_3 1
+execute as @s[nbt={Item:{components:{"minecraft:custom_data":{objectives:1b}}}},distance=0..,type=item] on origin run scoreboard players add @n[name=player_spawn,distance=0..,type=marker] mr_player_misc_setting_4 1
 
 
 execute as @e[name=player_spawn,distance=0..] if score @s mr_player_misc_setting_1 matches 2.. run scoreboard players reset @s mr_player_misc_setting_1
 execute as @e[name=player_spawn,distance=0..] if score @s mr_player_misc_setting_2 matches 2.. run scoreboard players reset @s mr_player_misc_setting_2
 execute as @e[name=player_spawn,distance=0..] if score @s mr_player_misc_setting_3 matches 2.. run scoreboard players reset @s mr_player_misc_setting_3
+execute as @e[name=player_spawn,distance=0..] if score @s mr_player_misc_setting_4 matches 2.. run scoreboard players reset @s mr_player_misc_setting_4
 
 
 

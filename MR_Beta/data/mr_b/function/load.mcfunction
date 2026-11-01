@@ -56,6 +56,7 @@ scoreboard objectives add mr_player_map_menu_toggle dummy
 scoreboard objectives add mr_player_misc_setting_1 dummy
 scoreboard objectives add mr_player_misc_setting_2 dummy
 scoreboard objectives add mr_player_misc_setting_3 dummy
+scoreboard objectives add mr_player_misc_setting_4 dummy
 scoreboard objectives add mr_player_misc_setting_enabled dummy
 
 scoreboard objectives add mr_player_invite_queue dummy
@@ -133,6 +134,10 @@ scoreboard objectives add mr_obj_count dummy
 scoreboard objectives add mr_obj_storm_duration dummy
 scoreboard objectives add mr_obj_storm_effect dummy
 scoreboard objectives add mr_obj_storm_random dummy
+scoreboard objectives add mr_obj_extract_spawn dummy
+scoreboard objectives add mr_obj_extract_spawn_random dummy
+scoreboard objectives add mr_obj_extract_spawn_random_value dummy
+scoreboard objectives add mr_obj_extract_resource dummy
 
 scoreboard objectives add mr_boss_random dummy
 scoreboard objectives add mr_boss_max_hp dummy
@@ -159,6 +164,7 @@ scoreboard objectives add mr_shop_player_currency_base dummy
 scoreboard objectives add mr_shop_player_currency_kill dummy
 scoreboard objectives add mr_shop_player_currency_bonus dummy
 scoreboard objectives add mr_shop_player_currency_diff dummy
+scoreboard objectives add mr_shop_player_currency_obj dummy
 scoreboard objectives modify mr_shop_player_currency displayname "Player Nitronic"
 scoreboard objectives add mr_shop_player_currency_check dummy
 scoreboard objectives add mr_shop_currency_check dummy
@@ -337,3 +343,6 @@ bossbar set minecraft:double_tap_time_active color pink
 
 bossbar add obj_storm [{"text":"Objective [ Storm ]","bold":true,"color":"#001ec7"}]
 bossbar set minecraft:obj_storm color blue
+
+bossbar add obj_extract [{"text":"Objective [ Extract ]","bold":true,"color":"#e7c119"}]
+bossbar set minecraft:obj_extract color yellow

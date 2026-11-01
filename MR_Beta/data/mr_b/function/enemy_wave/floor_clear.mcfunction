@@ -28,14 +28,14 @@ scoreboard players reset @a mr_player_count_deaths
 
 execute as @a[team=rift_party] run function mr_b:shop/sell_check
 
-execute as @e[name=player_spawn] run scoreboard players reset @s mr_enemy_count
-execute as @e[name=player_spawn] run scoreboard players reset @s mr_enemy_spawn
-execute as @e[name=player_spawn] run scoreboard players reset @s mr_wave
-execute as @e[name=player_spawn] run scoreboard players reset @s mr_wave_count
-execute as @e[name=player_spawn] run scoreboard players reset @s mr_event_time
-execute as @e[name=player_spawn] run scoreboard players reset @s mr_wave_delay
-execute as @e[name=player_spawn] run tag @s remove run_ongoing
-execute as @e[name=player_spawn] run function mr_b:objective/obj_clear
+execute as @e[name=player_spawn,distance=0..] run scoreboard players reset @s mr_enemy_count
+execute as @e[name=player_spawn,distance=0..] run scoreboard players reset @s mr_enemy_spawn
+execute as @e[name=player_spawn,distance=0..] run scoreboard players reset @s mr_wave
+execute as @e[name=player_spawn,distance=0..] run scoreboard players reset @s mr_wave_count
+execute as @e[name=player_spawn,distance=0..] run scoreboard players reset @s mr_event_time
+execute as @e[name=player_spawn,distance=0..] run scoreboard players reset @s mr_wave_delay
+execute as @e[name=player_spawn,distance=0..] run tag @s remove run_ongoing
+execute as @e[name=player_spawn,distance=0..] run function mr_b:objective/obj_clear
 
 execute as @a[team=rift_party] run scoreboard players reset @s player_death
 execute as @a[tag=party_alive] run tag @s remove party_alive
@@ -46,7 +46,7 @@ bossbar remove wave_progress
 bossbar remove ability_cd
 bossbar remove wave_delay
 execute as @a[team=rift_party] at @s run function mr_b:mechanics/ready_state
-execute as @e[team=rift_party] run scoreboard players reset @s mr_enemy_credit_drop
+execute as @e[team=rift_party,distance=0..] run scoreboard players reset @s mr_enemy_credit_drop
 
 
 scoreboard players reset @a mr_ability_castle_count
@@ -59,9 +59,9 @@ scoreboard players reset @a mr_ability_sanc_cd
 tag @a remove determination_used
 tag @a remove determination_active
 
-tp @a[team=rift_party] @e[name=lobby_spawn,limit=1]
+tp @a[team=rift_party,distance=0..] @e[name=lobby_spawn,limit=1,distance=0..]
 
 
-
+execute as @e[nbt={Item:{components:{"minecraft:custom_data":{mob_drop:true}}}},distance=0..,type=item] run kill @s
 
 clear @a written_book[rarity=epic]

@@ -14,6 +14,8 @@ execute as @e[tag=mr_unassigned,distance=0..] if score @s mr_wave_loc_random mat
 execute as @e[tag=mr_unassigned,distance=0..] if score @s mr_wave_loc_random matches 3 run tag @s add enemy_spawn_3
 execute as @e[tag=mr_unassigned,distance=0..] if score @s mr_wave_loc_random matches 4 run tag @s add enemy_spawn_4
 
+execute if entity @e[distance=0..,name=player_spawn,tag=objective_active,type=marker] as @e[tag=mr_unassigned,distance=0..] run function mr_b:enemy_wave/obj_spawn/check
+
 execute as @e[tag=mr_unassigned,distance=0..] run function mr_b:enemy_wave/enemy_loc
 
 

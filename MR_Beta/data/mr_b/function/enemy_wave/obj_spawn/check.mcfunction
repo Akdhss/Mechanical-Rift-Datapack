@@ -1,0 +1,1 @@
+function mr_b:enemy_wave/obj_spawn/extract

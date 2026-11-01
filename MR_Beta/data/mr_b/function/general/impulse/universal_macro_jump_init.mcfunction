@@ -1,0 +1,1 @@
+function mr_b:general/impulse/universal_macro_jump with storage mr_b:launch jump

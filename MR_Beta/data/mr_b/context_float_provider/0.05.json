@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:mul",
+  "inputs": [
+    100,
+    {
+      "type": "minecraft:add",
+      "inputs": [
+        30,
+        {
+          "type": "minecraft:mul",
+          "inputs": [
+            0.05,
+            {
+              "type": "minecraft:storage",
+              "storage": "mr_b:math_store",
+              "path": "temp",
+              "fallback": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

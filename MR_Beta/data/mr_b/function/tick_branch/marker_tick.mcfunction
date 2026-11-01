@@ -45,8 +45,8 @@ execute if score @s mr_wave_delay matches 40 as @n[limit=999,team=rift_party,dis
 execute if score @s mr_wave_delay matches 60 as @n[limit=999,team=rift_party,distance=0..] at @s run function mr_b:sfx/start_ding
 
 
-execute if score @s[tag=!objective_active] mr_enemy_count matches 0 if score @s mr_wave_delay matches 0 run scoreboard players set @s mr_wave_delay 1000
-execute if score @s[tag=!objective_active] mr_enemy_count matches 0 if score @s mr_wave_delay matches 1.. run scoreboard players remove @s mr_wave_delay 1
+execute if score @s[tag=!objective_active_force] mr_enemy_count matches 0 if score @s mr_wave_delay matches 0 run scoreboard players set @s mr_wave_delay 1000
+execute if score @s[tag=!objective_active_force] mr_enemy_count matches 0 if score @s mr_wave_delay matches 1.. run scoreboard players remove @s mr_wave_delay 1
 execute if entity @s[tag=run_ongoing] if score @s mr_wave matches ..5 if score @s mr_enemy_count matches 0 if score @s mr_wave_delay matches 0 run function mr_b:enemy_wave/new_wave
 execute if entity @s[tag=!run_ongoing] if score @s mr_enemy_count matches 0 if score @s mr_wave_delay matches 0 run function mr_b:enemy_wave/wave_start
 
@@ -54,9 +54,9 @@ execute if entity @s[tag=!run_ongoing] if score @s mr_enemy_count matches 0 if s
 execute if entity @s[tag=run_ongoing] if entity @a[tag=party_dead,tag=!determination_active] unless entity @a[tag=party_alive] run function mr_b:mechanics/run_fail
 
 
-execute unless score @s mr_enemy_spawn matches 1.. if entity @s[tag=!wave_finished,tag=!wave_starting,tag=!objective_active] if score @s mr_enemy_count matches 0 if score @s mr_wave_delay matches 1.. run scoreboard players add @e[name=player_spawn,distance=0..] mr_wave_count 1
+execute unless score @s mr_enemy_spawn matches 1.. if entity @s[tag=!wave_finished,tag=!wave_starting,tag=!objective_active_force] if score @s mr_enemy_count matches 0 if score @s mr_wave_delay matches 1.. run scoreboard players add @e[name=player_spawn,distance=0..] mr_wave_count 1
 
-execute unless score @s mr_enemy_spawn matches 1.. if entity @s[tag=!wave_finished,tag=!wave_starting,tag=!objective_active] if score @s mr_enemy_count matches 0 if score @s mr_wave_delay matches 1.. as @a[team=rift_party] run function mr_b:enemy_wave/end_wave
+execute unless score @s mr_enemy_spawn matches 1.. if entity @s[tag=!wave_finished,tag=!wave_starting,tag=!objective_active_force] if score @s mr_enemy_count matches 0 if score @s mr_wave_delay matches 1.. as @a[team=rift_party] run function mr_b:enemy_wave/end_wave
 
 
 execute if entity @s[tag=wave_starting] as @a[team=rift_party] if score @s player_death matches 1.. run function mr_b:mechanics/dead_respawn
@@ -111,18 +111,22 @@ execute if entity @s[tag=backroom_map_origin_world_exclusive] run function mr_b:
 
 
 #objective
-execute if score @s[tag=!objective_active,tag=!objective_finished] mr_wave matches 3.. if entity @e[tag=wave_mob] run function mr_b:objective/obj_check
-execute if entity @s[tag=objective_active] if score @s mr_wave matches ..5 if score @s mr_enemy_count matches ..60 run scoreboard players add @s mr_obj_endless 1
-execute if entity @s[tag=objective_active] if score @s mr_obj_endless matches 250.. run function mr_b:enemy_wave/endless_spawn
-execute if entity @s[tag=objective_active] if score @s mr_obj_endless matches 250.. run scoreboard players reset @s mr_obj_endless
+execute if score @s[tag=!objective_active,tag=!objective_finished,tag=objectives_allowed] mr_wave matches 1.. if score @s mr_enemy_count matches ..60 if entity @e[tag=wave_mob] run function mr_b:objective/obj_check
+execute if entity @s[tag=objective_active_force] if score @s mr_wave matches ..5 run scoreboard players add @s mr_obj_endless 1
+execute if entity @s[tag=objective_active_force] if score @s mr_obj_endless matches 250.. run function mr_b:enemy_wave/endless_spawn
+execute if entity @s[tag=objective_active_force] if score @s mr_obj_endless matches 250.. run scoreboard players reset @s mr_obj_endless
 
-execute if entity @s[tag=objective_active] if score @s mr_obj_count matches ..0 run function mr_b:objective/spawning_disable
+execute if entity @s[tag=objective_active_force] if score @s mr_obj_count matches ..0 run function mr_b:objective/spawning_disable
 
 execute if entity @s[tag=obj_storm] at @s run function mr_b:objective/storm/storm
 
+execute if entity @s[tag=obj_extract] at @s run function mr_b:objective/extract/vfx
+execute if entity @s[tag=obj_extract] if items entity @a[sort=nearest,team=rift_party,distance=..4.5] container.* ancient_debris[custom_data~{extract_item:true}] run function mr_b:objective/extract/deposit
 
-execute if entity @s[tag=wave_starting] unless entity @a[scores={mr_enchant_lily_time=1..}] run scoreboard objectives setdisplay sidebar.team.green mr_shop_player_currency
-execute if entity @s[tag=run_ongoing] unless entity @a[scores={mr_enchant_lily_time=1..}] run scoreboard objectives setdisplay sidebar.team.green mr_shop_player_currency
+execute if entity @s[tag=!obj_extract] if entity @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{extract_item:true}}}}] run kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{extract_item:true}}}}]
+
+#execute if entity @s[tag=wave_starting] unless entity @a[scores={mr_enchant_lily_time=1..}] run scoreboard objectives setdisplay sidebar.team.green mr_shop_player_currency
+#execute if entity @s[tag=run_ongoing] unless entity @a[scores={mr_enchant_lily_time=1..}] run scoreboard objectives setdisplay sidebar.team.green mr_shop_player_currency
 
 #test
 #------------------------------------------------------- [ MENU TOGGLES ] ------------------------------------------------------- 
@@ -131,7 +135,9 @@ execute if entity @s[tag=run_ongoing] unless entity @a[scores={mr_enchant_lily_t
 execute if score @s mr_player_misc_setting_1 matches 1 run tag @s add event_guaranteed
 execute if score @s mr_player_misc_setting_2 matches 1 run tag @s add endless_enabled
 execute if score @s mr_player_misc_setting_3 matches 1 run tag @s remove announce_event
+execute if score @s mr_player_misc_setting_4 matches 1 run tag @s add objectives_allowed
 
 execute unless score @s mr_player_misc_setting_1 matches 1 run tag @s remove event_guaranteed
 execute unless score @s mr_player_misc_setting_2 matches 1 run tag @s remove endless_enabled
 execute unless score @s mr_player_misc_setting_3 matches 1 run tag @s add announce_event
+execute unless score @s mr_player_misc_setting_4 matches 1 run tag @s remove objectives_allowed

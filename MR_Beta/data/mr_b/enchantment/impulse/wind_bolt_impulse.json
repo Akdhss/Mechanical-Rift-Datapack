@@ -4,13 +4,10 @@
     "text": "Wind Bolt"
   },
   "effects": {
-    "minecraft:location_changed": [
+    "minecraft:tick": [
 
       {
-        "requirements": {
-            "type": "enchantment_active_check",
-            "active": false
-        },
+        
         "effect": {
           "type": "run_function",
           "function": "mr_b:enchant/armor/boots/wind_bolt/rotation"        
@@ -19,10 +16,7 @@
       
       {
         
-        "requirements": {
-            "type": "enchantment_active_check",
-            "active": false
-        },
+        
         "effect": {
           "type": "minecraft:apply_impulse",
           "direction": [
@@ -43,10 +37,7 @@
         }
       },
       {
-        "requirements": {
-            "type": "enchantment_active_check",
-            "active": false
-        },
+        
         "effect": {
           "type": "run_function",
           "function": "mr_b:enchant/armor/boots/wind_bolt/macro_jump_init"          

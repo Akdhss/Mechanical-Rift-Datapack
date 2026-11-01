@@ -4,13 +4,9 @@
     "text": "Wind Bolt"
   },
   "effects": {
-    "minecraft:location_changed": [
+    "minecraft:tick": [
 
       {
-        "requirements": {
-            "type": "enchantment_active_check",
-            "active": false
-        },
         "effect": {
           "type": "run_function",
           "function": "mr_b:general/impulse/rotation"        
@@ -19,11 +15,7 @@
       
       {
         
-        "requirements": {
-            "type": "enchantment_active_check",
-            "active": false
-        },
-        "effect": {
+         "effect": {
           "type": "minecraft:apply_impulse",
           "direction": [
             0,
@@ -43,10 +35,7 @@
         }
       },
       {
-        "requirements": {
-            "type": "enchantment_active_check",
-            "active": false
-        },
+        
         "effect": {
           "type": "run_function",
           "function": "mr_b:general/impulse/macro_jump_init"          
