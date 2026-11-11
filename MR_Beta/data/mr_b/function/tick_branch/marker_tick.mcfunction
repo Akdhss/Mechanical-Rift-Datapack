@@ -121,7 +121,7 @@ execute if entity @s[tag=objective_active_force] if score @s mr_obj_count matche
 execute if entity @s[tag=obj_storm] at @s run function mr_b:objective/storm/storm
 
 execute if entity @s[tag=obj_extract] at @s run function mr_b:objective/extract/vfx
-execute if entity @s[tag=obj_extract] if items entity @a[sort=nearest,team=rift_party,distance=..4.5] container.* ancient_debris[custom_data~{extract_item:true}] run function mr_b:objective/extract/deposit
+execute if entity @s[tag=obj_extract] if items entity @a[sort=nearest,team=rift_party,distance=..4.5,tag=!deposit_cd] container.* ancient_debris[custom_data~{extract_item:true}] run function mr_b:objective/extract/deposit
 
 execute if entity @s[tag=!obj_extract] if entity @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{extract_item:true}}}}] run kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{extract_item:true}}}}]
 

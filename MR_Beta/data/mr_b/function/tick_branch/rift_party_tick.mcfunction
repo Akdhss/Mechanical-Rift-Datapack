@@ -121,9 +121,9 @@ execute if entity @e[tag=run_ongoing,distance=0..] if entity @e[tag=wave_mob] ru
 
 
 
-execute as @e[nbt={Item:{components:{"minecraft:use_cooldown":{seconds:1f,cooldown_group:"minecraft:nondroppable"}}}},distance=0..,type=item] at @s on origin run data modify entity @e[sort=nearest,limit=1,nbt={Item:{components:{"minecraft:use_cooldown":{seconds:1f,cooldown_group:"minecraft:nondroppable"}}}},distance=0..,type=item] Owner set from entity @s UUID
-execute as @e[nbt={Item:{components:{"minecraft:use_cooldown":{seconds:1f,cooldown_group:"minecraft:nondroppable"}}}},distance=0..,type=item] run data modify entity @s PickupDelay set value 0s
-execute as @e[nbt={Item:{components:{"minecraft:use_cooldown":{seconds:1f,cooldown_group:"minecraft:nondroppable"}}}},distance=0..,type=item] at @s on origin run tp @e[sort=nearest,limit=1,distance=0..,type=item] @s
+execute as @e[predicate=mr_b:item_nondroppable,distance=0..,type=item] at @s on origin run data modify entity @e[sort=nearest,limit=1,predicate=mr_b:item_nondroppable,distance=0..,type=item] Owner set from entity @s UUID
+execute as @e[predicate=mr_b:item_nondroppable,distance=0..,type=item] run data modify entity @s PickupDelay set value 0s
+execute as @e[predicate=mr_b:item_nondroppable,distance=0..,type=item] at @s on origin run tp @e[sort=nearest,limit=1,distance=0..,type=item] @s
 
 
 
@@ -244,14 +244,6 @@ execute if entity @s[tag=enchant_upgrade_active,predicate=mr_b:wind_bolt] at @s 
 execute if score @s mr_armor_upgrade_cooldown matches 1.. run scoreboard players remove @s mr_armor_upgrade_cooldown 1
 
 
-# ----- enemy on hit effect -----
-execute if entity @s[nbt={HurtTime:9s}] on attacker if entity @s[name=Mirror,tag=!silenced] as @p[nbt={HurtTime:9s}] run function mr_b:random_event/base_event/mirror/mirror_jumpscare
-
-execute if entity @s[nbt={HurtTime:9s}] on attacker if entity @s[type=wolf,tag=!silenced] as @p[nbt={HurtTime:9s}] run function mr_b:enemy_wave/enemy/wolf/apply
-execute if entity @s[nbt={HurtTime:9s}] on attacker if entity @s[tag=spearman,tag=!silenced] as @p[nbt={HurtTime:9s}] run function mr_b:enemy_wave/enemy/spearman/enemy_apply
-execute if entity @s[nbt={HurtTime:9s}] on attacker if entity @s[tag=spearman,tag=!silenced] run function mr_b:enemy_wave/enemy/spearman/self_apply
-
-
 execute if entity @s[tag=party_dead,tag=casting_domain,tag=!domain_immune] run function mr_b:ability/domain/domain_interrupt
 execute if entity @s[team=rift_party,tag=casting_domain] run scoreboard players remove @s mr_domain_wind_up 1
 execute if entity @s[team=rift_party,tag=casting_domain] run function mr_b:ability/domain/domain_cast
@@ -283,6 +275,16 @@ execute if entity @s[tag=storm_affected] if score @s mr_obj_storm_effect matches
 execute if predicate mr_b:armor_check run title @s actionbar {text:"-- REPAIR ARMOR NOW!! --",bold:true,color:"red"}
 
 execute if entity @e[name=player_spawn,tag=!obj_extract,distance=0..,type=marker] run clear @s *[custom_data~{extract_item:true}]
+execute if entity @s[tag=deposit_cd] run scoreboard players remove @s mr_obj_extract_deposit 1
+execute if entity @s[tag=deposit_cd] if score @s mr_obj_extract_deposit matches ..0 run tag @s remove deposit_cd
+
+
+# mid air jump check
+execute if predicate mr_b:player/movement/jump run scoreboard players add @s mr_player_jump_hold 1
+execute unless predicate mr_b:player/movement/jump run scoreboard players set @s mr_player_jump_hold 0
+execute if predicate mr_b:on_ground run scoreboard players set @s mr_player_jump_check 0
+execute if score @s mr_player_jump_check matches 1 unless score @s mr_player_jump_hold matches 2.. if predicate mr_b:player/movement/jump run function mr_b:enchant/armor/boots/mid_air_check_jump
+execute if score @s mr_player_jump_check matches 0 unless predicate mr_b:on_ground run scoreboard players set @s mr_player_jump_check 1
 
 #------------------------------------------------------- [ SHOP UI ] ------------------------------------------------------- 
 

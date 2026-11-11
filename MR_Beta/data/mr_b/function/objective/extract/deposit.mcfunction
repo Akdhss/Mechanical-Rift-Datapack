@@ -1,4 +1,7 @@
 clear @a[sort=nearest,limit=1] *[custom_data~{extract_item:true}] 1
+tag @a[sort=nearest,limit=1] add deposit_cd
+scoreboard players set @a[sort=nearest,limit=1] mr_obj_extract_deposit 15
+
 scoreboard players add @s mr_obj_extract_resource 1
 execute store result bossbar minecraft:obj_extract value run scoreboard players get @s mr_obj_extract_resource
 execute if score @s mr_obj_extract_resource matches 15.. run function mr_b:objective/extract/event_end

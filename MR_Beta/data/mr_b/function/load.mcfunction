@@ -116,6 +116,8 @@ scoreboard objectives add mr_player_count_deaths deathCount
 scoreboard objectives add mr_player_count dummy
 scoreboard objectives add mr_player_right_click_impulse dummy
 scoreboard objectives add mr_player_scope_toggle dummy
+scoreboard objectives add mr_player_jump_check dummy
+scoreboard objectives add mr_player_jump_hold dummy
 
 scoreboard objectives add mr_dlc_traitor_chance dummy
 
@@ -135,6 +137,7 @@ scoreboard objectives add mr_obj_storm_duration dummy
 scoreboard objectives add mr_obj_storm_effect dummy
 scoreboard objectives add mr_obj_storm_random dummy
 scoreboard objectives add mr_obj_extract_spawn dummy
+scoreboard objectives add mr_obj_extract_deposit dummy
 scoreboard objectives add mr_obj_extract_spawn_random dummy
 scoreboard objectives add mr_obj_extract_spawn_random_value dummy
 scoreboard objectives add mr_obj_extract_resource dummy

@@ -1,6 +1,7 @@
 tag @s add celerity_user
-effect give @a[tag=!celerity_user,team=rift_party,distance=..4.5] regeneration 5 3 true
-effect clear @a[team=rift_party,distance=..4.5] poison
+
+item replace entity @a[tag=!celerity_user,team=rift_party,distance=..4.5] armor.body with saddle[equippable={slot:"body",equip_sound:"intentionally_empty"},enchantments={"mr_b:base/heal":2}]
+effect give @a[tag=!celerity_user,team=rift_party,distance=..4.5] regeneration 3 2 true
 effect give @s regeneration 5 1 true
 tag @s remove celerity_user
 

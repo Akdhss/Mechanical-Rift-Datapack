@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "minecraft:entity_type": "minecraft:item",
+    "minecraft:slots": {
+      "contents": {
+        "components": {
+          "minecraft:use_cooldown": {
+            "seconds": 1,
+            "cooldown_group": "minecraft:nondroppable"
+          }
+        }
+      }
+    }
+  }
+}

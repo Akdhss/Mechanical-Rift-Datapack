@@ -22,3 +22,8 @@ execute store result bossbar wave_delay max run scoreboard players get @e[name=p
 
 execute as @e[name=player_spawn] if score @s mr_wave_delay matches ..0 run scoreboard players operation @s mr_enemy_spawn = @s mr_wave_enemy
 
+scoreboard players operation @s mr_shop_player_currency_base -= @s mr_shop_player_currency_base
+scoreboard players operation @s mr_shop_player_currency_kill -= @s mr_shop_player_currency_kill
+scoreboard players operation @s mr_shop_player_currency_bonus -= @s mr_shop_player_currency_bonus
+scoreboard players operation @s mr_shop_player_currency_diff -= @s mr_shop_player_currency_diff
+scoreboard players operation @s mr_shop_player_currency_obj -= @s mr_shop_player_currency_obj

@@ -4,7 +4,7 @@
     "minecraft:netherite_boots",
     "diamond_boots"
   ],
-    "exclusive_set": [
+  "exclusive_set": [
     "mr_b:wind_bolt"
   ],
   "weight": 1,
@@ -20,5 +20,27 @@
   "anvil_cost": 0,
   "slots": [
     "feet"
-  ]
+  ],
+  "effects": {
+    "minecraft:tick": [     
+      {
+        "requirements": {
+          "type": "minecraft:all_of",
+          "terms": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:flags": {
+                "is_on_ground": true
+              }
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "mr_b:enchant/armor/boots/cloudstep/revoke_jump"
+        }
+      }
+    ]
+  }
 }

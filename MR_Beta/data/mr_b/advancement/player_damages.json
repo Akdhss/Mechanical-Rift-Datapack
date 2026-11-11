@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "damaged": {
+      "trigger": "minecraft:player_hurt_entity"
+    }
+  },
+  "rewards": {
+    "function": "mr_b:general/on_hit/to_entity"
+  }
+}
