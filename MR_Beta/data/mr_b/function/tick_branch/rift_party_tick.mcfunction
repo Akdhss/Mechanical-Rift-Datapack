@@ -117,7 +117,7 @@ execute unless score @s mr_effect_disarm_time matches 0.. run scoreboard players
 
 
 
-execute if entity @e[tag=run_ongoing,distance=0..] if entity @e[tag=wave_mob] run bossbar set wave_progress players @a[team=rift_party,distance=0..]
+execute if entity @e[tag=run_ongoing,distance=0..] if entity @e[tag=wave_mob,distance=0..] run bossbar set wave_progress players @a[team=rift_party,distance=0..]
 
 
 

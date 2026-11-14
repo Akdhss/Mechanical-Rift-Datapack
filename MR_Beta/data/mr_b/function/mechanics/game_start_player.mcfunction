@@ -1,4 +1,4 @@
-effect give @s blindness 2 255 true
+
 
 effect give @s saturation 2 255 true
 effect give @s instant_health 1000 255 true
@@ -21,3 +21,6 @@ scoreboard players reset @s mr_player_count_kill
 scoreboard players reset @s mr_player_count_damage_dealt_melee
 scoreboard players reset @s mr_player_count_damage_taken
 scoreboard players reset @s mr_player_count_deaths
+
+
+execute at @s run function mr_b:general/camera_cutscene/spawn_check

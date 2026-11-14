@@ -10,8 +10,10 @@ function mr_b:effect/cleanse/cleanse_effect
 
 execute as @s[tag=!determination_used] if items entity @s armor.chest *[enchantments~[{enchantments:"mr_b:armor/chest/determination/determination"}]] run return fail
 
-execute store result score .global global_random run random value 1..3
 
-execute at @s if score .global global_random matches 1 run playsound mr_b:player/generic/death/death1 player @a
-execute at @s if score .global global_random matches 2 run playsound mr_b:player/generic/death/death2 player @a
-execute at @s if score .global global_random matches 3 run playsound mr_b:player/generic/death/death3 player @a
+
+#execute store result score .global global_random run random value 1..3
+
+#execute at @s if score .global global_random matches 1 run playsound mr_b:player/generic/death/death1 player @a
+#execute at @s if score .global global_random matches 2 run playsound mr_b:player/generic/death/death2 player @a
+#execute at @s if score .global global_random matches 3 run playsound mr_b:player/generic/death/death3 player @a

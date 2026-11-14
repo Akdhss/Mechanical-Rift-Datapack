@@ -156,3 +156,6 @@ execute as @e[tag=independent_domain,distance=0..] run function mr_b:ability/dom
 
 execute as @e[tag=!checked,distance=0..,type=item] on origin run function mr_b:shop/player_inventory_check
 execute as @e[tag=!checked,distance=0..,type=item] run tag @s add checked
+
+execute as @e[type=item_display,tag=camera] run scoreboard players add @s camera_time 1
+execute as @e[type=item_display,tag=camera,scores={camera_time=40..}] at @s run function mr_b:general/camera_cutscene/clear_camera

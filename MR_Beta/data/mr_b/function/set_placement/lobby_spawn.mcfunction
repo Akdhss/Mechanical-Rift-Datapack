@@ -4,4 +4,4 @@ kill @e[name=lobby_spawn]
 summon marker ~ ~.5 ~ {CustomName:"lobby_spawn",Tags:["spawnpoint"]}
 
 say Lobby spawn set!
-execute at @e[name=lobby_spawn] run setworldspawn ~ ~ ~
+execute as @e[name=lobby_spawn] at @s run setworldspawn ~ ~ ~

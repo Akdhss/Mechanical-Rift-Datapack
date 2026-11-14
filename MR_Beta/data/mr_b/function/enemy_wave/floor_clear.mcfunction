@@ -65,3 +65,5 @@ tp @a[team=rift_party,distance=0..] @e[name=lobby_spawn,limit=1,distance=0..]
 execute as @e[nbt={Item:{components:{"minecraft:custom_data":{mob_drop:true}}}},distance=0..,type=item] run kill @s
 
 clear @a written_book[rarity=epic]
+
+execute as @a[team=rift_party] at @s run playsound mr_b:system/run_clear

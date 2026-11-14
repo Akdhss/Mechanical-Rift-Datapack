@@ -9,8 +9,17 @@ scoreboard objectives add ui.id dummy
 
 setblock 0 -64 0 yellow_shulker_box
 
+scoreboard objectives add temp dummy
 
+scoreboard objectives add uuid0 dummy
+scoreboard objectives add uuid1 dummy
+scoreboard objectives add uuid2 dummy
+scoreboard objectives add uuid3 dummy
 
+scoreboard objectives add camera_time dummy
+scoreboard objectives add cam_x dummy
+scoreboard objectives add cam_y dummy
+scoreboard objectives add cam_z dummy
 
 scoreboard objectives add global_range dummy
 scoreboard objectives add global_random dummy

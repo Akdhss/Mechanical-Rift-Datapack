@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "uuid": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "rewards": {
+    "function": "mr_b:general/uuid/register"
+  }
+}

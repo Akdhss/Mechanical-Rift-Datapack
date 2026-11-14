@@ -10,7 +10,7 @@ scoreboard players set @s mr_wave_delay 1000
 scoreboard players set @s mr_wave_count 1
 scoreboard players reset @s mr_enemy_endless_time
 tag @s remove wave_finished
-execute store result score @s mr_player_count run execute if entity @a[team=rift_party,scores={ready_state=1}]
+execute store result score @s mr_player_count if entity @a[team=rift_party,scores={ready_state=1}]
 
 bossbar add wave_delay [{"text":"Time until next wave:","bold":true,"color":"#00DB9A"}]
 execute store result bossbar wave_delay max run scoreboard players get @s mr_wave_delay
