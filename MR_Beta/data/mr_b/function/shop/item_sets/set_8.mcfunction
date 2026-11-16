@@ -3,11 +3,11 @@ scoreboard players remove @s mr_shop_player_currency 850
 item replace entity @s armor.head with netherite_helmet[enchantments={projectile_protection:1},trim={material:"emerald",pattern:"minecraft:flow"}] 1
 item replace entity @s armor.chest with netherite_chestplate[enchantments={projectile_protection:1},trim={material:"emerald",pattern:"minecraft:bolt"}] 1
 item replace entity @s armor.legs with netherite_leggings[enchantments={projectile_protection:1},trim={material:"emerald",pattern:"minecraft:flow"}] 1
-item replace entity @s armor.feet with netherite_boots[enchantments={"mr_b:cloudstep":1},trim={material:"emerald",pattern:"minecraft:flow"}] 1
+item replace entity @s armor.feet with netherite_boots[enchantments={"mr_b:armor/feet/cloudstep/cloudstep":1},trim={material:"emerald",pattern:"minecraft:flow"}] 1
 
 tag @s add guiding_wind_user
 
-give @s crossbow[custom_name="Airshot",rarity=epic,enchantments={infinity:1,punch:2,unbreaking:3,"mr_b:bloom_shot":1,"mr_b:skypiercer":1}] 1
+give @s crossbow[custom_name="Airshot",rarity=epic,enchantments={infinity:1,punch:2,unbreaking:3,"mr_b:weapon/crossbow/bloom_shot/bloom_shot":1,"mr_b:weapon/crossbow/skypiercer/skypiercer":1}] 1
 give @s cooked_beef 36
 give @s ender_pearl 4
 item replace entity @s container.17 with arrow

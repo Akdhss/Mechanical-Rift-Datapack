@@ -1,6 +1,6 @@
 clear @s potion[potion_contents={custom_color:15786192}] 1
 
-give @s netherite_sword[custom_name="Windblessed Blades",rarity=epic,enchantments={"mr_b:blade_call":1},attack_animation={type:"stab"},use_cooldown={seconds:1,cooldown_group:nondroppable}] 1
+give @s netherite_sword[custom_name="Windblessed Blades",rarity=epic,enchantments={"mr_b:weapon/sword/blade_call/blade_call":1},attack_animation={type:"stab"},use_cooldown={seconds:1,cooldown_group:nondroppable}] 1
 scoreboard players set @s mr_enchant_blade_call_count 5
 tellraw @a [{text:"[",bold:true,color:"dark_green"},{selector:"@s"},{text:"]",bold:true,color:"dark_green"},{text:" Get out of my ",bold:false,color:"red"},{text:"WAY!",bold:true,color:"dark_red"}]
 

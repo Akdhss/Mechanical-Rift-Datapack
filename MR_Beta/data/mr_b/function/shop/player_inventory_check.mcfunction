@@ -17,9 +17,9 @@ tag @s remove has_ice_element
 tag @s remove mr_invalid_armor
 
 
-execute if items entity @s container.* *[enchantments~[{enchantments:"mr_b:coalescence"}]] run tag @s add has_ice_element
-execute if items entity @s container.* *[enchantments~[{enchantments:"mr_b:icebreaker"}]] run tag @s add has_ice_element
-execute if items entity @s container.* *[enchantments~[{enchantments:"mr_b:shatterpoint"}]] run tag @s add has_ice_element
+execute if items entity @s container.* *[enchantments~[{enchantments:"mr_b:weapon/bow/coalescence/coalescence"}]] run tag @s add has_ice_element
+execute if items entity @s container.* *[enchantments~[{enchantments:"mr_b:weapon/axe/icebreaker/icebreaker"}]] run tag @s add has_ice_element
+execute if items entity @s container.* *[enchantments~[{enchantments:"mr_b:weapon/bow/shatterpoint/shatterpoint"}]] run tag @s add has_ice_element
 
 execute unless score @s mr_player_inv_check_shield matches 1.. store success score @s mr_player_inv_check_shield run clear @s shield 0
 execute unless score @s mr_player_inv_check_sword matches 1.. store success score @s mr_player_inv_check_sword run clear @s diamond_sword 0

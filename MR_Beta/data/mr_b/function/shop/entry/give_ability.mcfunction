@@ -1,0 +1,1 @@
+$give @s potion[potion_contents={custom_color:$(color)},custom_name=[{"text":"$(name)","italic":false}],max_stack_size=$(stack),lore=[[{"text":"$(lore)"}]],rarity=epic,consumable={consume_seconds:1000000000,animation:bow,has_consume_particles:0b},custom_data={ability:true}] $(count)

@@ -1,4 +1,4 @@
-effect give @s blindness 3 255 true
+
 tp @s ~ ~.5 ~
 execute store result storage mr_b:cutscene coord_begin.x double 0.001 run data get entity @s Pos[0] 1000
 execute store result storage mr_b:cutscene coord_begin.y double 0.001 run data get entity @s Pos[1] 1000

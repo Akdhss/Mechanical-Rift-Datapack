@@ -2,9 +2,9 @@ scoreboard players reset @s player_death
 title @s actionbar {text:"-- You have bought the Divebomber Kit --",bold:true,color:"gold"}
 scoreboard players remove @s mr_shop_player_currency 850
 item replace entity @s armor.head with netherite_helmet[enchantments={unbreaking:1},trim={material:"resin",pattern:"minecraft:rib"}] 1
-item replace entity @s armor.chest with netherite_chestplate[enchantments={unbreaking:1,"mr_b:hail_mary":1,"mr_b:lily":1},trim={material:"minecraft:redstone",pattern:"minecraft:sentry"}] 1
+item replace entity @s armor.chest with netherite_chestplate[enchantments={unbreaking:1,"mr_b:armor/chest/hail_mary/hail_mary":1,"mr_b:armor/chest/lily/lily":1},trim={material:"minecraft:redstone",pattern:"minecraft:sentry"}] 1
 item replace entity @s armor.legs with netherite_leggings[enchantments={unbreaking:1},trim={material:"minecraft:redstone",pattern:"minecraft:bolt"}] 1
-item replace entity @s armor.feet with netherite_boots[enchantments={unbreaking:1,"mr_b:wind_bolt":1},trim={material:"minecraft:resin",pattern:"minecraft:rib"}] 1
+item replace entity @s armor.feet with netherite_boots[enchantments={unbreaking:1,"mr_b:armor/feet/wind_bolt/wind_bolt":1},trim={material:"minecraft:resin",pattern:"minecraft:rib"}] 1
 
 scoreboard players reset @s mr_ability_desc_refresh
 

@@ -73,7 +73,7 @@ bossbar set team_status players @a[team=rift_party,tag=!party_alive,tag=!party_d
 
 execute if score @s mr_wave_delay matches 999 if score @s mr_wave matches 5 run function mr_b:boss/boss_check
 
-execute if score @s mr_wave matches 6 if score @s mr_enemy_count matches 0 if entity @n[limit=999,tag=party_alive,distance=0..] run function mr_b:enemy_wave/floor_clear
+
 
 execute if entity @s[tag=run_ongoing] store result bossbar wave_progress value run scoreboard players get @s mr_enemy_count
 
@@ -106,6 +106,8 @@ execute if entity @e[tag=boss,distance=0..] run tag @s add boss_alive
 execute unless entity @e[tag=boss,distance=0..] if entity @s[tag=boss_alive,distance=0..] run title @a title [{"text":"-- Boss Has Fallen --","bold":true,"color":"gold"}]
 execute unless entity @e[tag=boss,distance=0..] run tag @s remove boss_alive
 
+
+execute if score @s mr_wave matches 6 if score @s mr_enemy_count matches 0 if entity @n[limit=999,tag=party_alive,distance=0..] run function mr_b:enemy_wave/floor_clear
 
 execute if entity @s[tag=backroom_map_origin_world_exclusive] run function mr_b:world_origin_exclusive/backrooms/backroom
 

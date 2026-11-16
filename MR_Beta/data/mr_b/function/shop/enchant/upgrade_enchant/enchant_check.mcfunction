@@ -1,7 +1,7 @@
 title @s[tag=enchant_upgrade_active] actionbar {text:"-- Enchant Upgrade Still Pending --",color:"red"}
 execute at @s[tag=enchant_upgrade_active] run function mr_b:sfx/item_fail
 
-execute unless items entity @s weapon.mainhand *[enchantments={"mr_b:enchant_dummy":1}] run return fail
+execute unless items entity @s weapon.mainhand *[enchantments={"mr_b:base/enchant_dummy":1}] run return fail
 
 advancement revoke @s only mr_b:enchant/enchant_check
 
@@ -12,7 +12,7 @@ execute if entity @s[tag=enchant_upgrade_active] run return fail
 #execute as @a at @s anchored eyes if items entity @s weapon.* *[minecraft:custom_data~{1:1b}] run particle minecraft:electric_spark ^ ^ ^4 0 0 0 0 1
 
 
-execute if items entity @s weapon.mainhand paper[enchantments={"mr_b:enchant_dummy":1}] run tag @s add enchant_upgrade_active
+execute if items entity @s weapon.mainhand paper[enchantments={"mr_b:base/enchant_dummy":1}] run tag @s add enchant_upgrade_active
 
 
 

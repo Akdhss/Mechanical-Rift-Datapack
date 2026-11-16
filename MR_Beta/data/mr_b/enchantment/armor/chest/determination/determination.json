@@ -1,6 +1,6 @@
 {
   "description": "Last Stand",
-  "exclusive_set": ["mr_b:lily"],
+  "exclusive_set": ["mr_b:armor/chest/lily/lily"],
   "supported_items": [
     "minecraft:netherite_chestplate",
     "diamond_chestplate"

@@ -7,7 +7,7 @@ scoreboard players operation @s mr_shop_currency_check *= .shop mr_shop_currency
 
 execute if score @s mr_shop_player_currency_check < @s mr_shop_player_currency run tellraw @s ["",{text:"Gained: "},{score:{name:"@s",objective:"mr_shop_currency_check"},color:"green"}]
 
-execute if score @s mr_shop_player_currency_check < @s mr_shop_player_currency if items entity @s armor.head *[enchantments~[{enchantments:"mr_b:collector"}]] run function mr_b:enchant/armor/helmet/collector/collector
+execute if score @s mr_shop_player_currency_check < @s mr_shop_player_currency if items entity @s armor.head *[enchantments~[{enchantments:"mr_b:armor/head/collector/collector"}]] run function mr_b:enchant/armor/helmet/collector/collector
 
 execute if score @s mr_shop_player_currency_check > @s mr_shop_player_currency run tellraw @s ["",{text:"Spent: "},{score:{name:"@s",objective:"mr_shop_currency_check"},color:"dark_red"}]
 

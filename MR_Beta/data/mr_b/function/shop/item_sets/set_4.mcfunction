@@ -6,8 +6,8 @@ item replace entity @s armor.legs with netherite_leggings[enchantments={unbreaki
 item replace entity @s armor.feet with netherite_boots[enchantments={unbreaking:2,protection:1},trim={material:"minecraft:iron",pattern:"minecraft:wild"}] 1
 
 item replace entity @s weapon.offhand with shield[enchantments={unbreaking:3}] 1
-give @s netherite_sword[custom_name="Execute",rarity=epic,enchantments={"mr_b:celerity":1,sharpness:3,"mr_b:alacrity":1}] 1
-give @s netherite_sword[custom_name="Fortify",rarity=epic,enchantments={"mr_b:celerity":1,knockback:3,sweeping_edge:3,"mr_b:alacrity":1}] 1
+give @s netherite_sword[custom_name="Execute",rarity=epic,enchantments={"mr_b:weapon/sword/celerity/celerity":1,sharpness:3,"mr_b:weapon/sword/alacrity/alacrity":1}] 1
+give @s netherite_sword[custom_name="Fortify",rarity=epic,enchantments={"mr_b:weapon/sword/celerity/celerity":1,knockback:3,sweeping_edge:3,"mr_b:weapon/sword/alacrity/alacrity":1}] 1
 give @s cooked_beef 36
 give @s ender_pearl 4
 give @s crossbow[enchantments={unbreaking:3}] 1

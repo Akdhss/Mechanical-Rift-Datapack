@@ -3,6 +3,8 @@ tellraw @a [""]
 tellraw @a ["",{text:" ",color:"white"},{text:"Mechanical Rift: BETA Datapack",color:"white",underlined:true},{text:" by ",color:"white"},{text:"Akdhss ",bold:true,color:"blue"},{text:"& ",color:"white"},{text:"Dawnsire ",bold:true,color:"gold"},{text:"has been loaded!",color:"white"}]
 tellraw @a [""]
 
+function mr_b:shop/registry/init
+
 scoreboard objectives add ui dummy
 # link to minecart to player
 scoreboard objectives add ui.id dummy

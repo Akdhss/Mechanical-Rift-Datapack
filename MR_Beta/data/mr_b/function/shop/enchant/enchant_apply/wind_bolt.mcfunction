@@ -1,5 +1,5 @@
 
-execute as @s[tag=enchant_wind_bolt,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:wind_bolt":1}}}}] run enchant @s mr_b:wind_bolt
+execute as @s[tag=enchant_wind_bolt,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:armor/feet/wind_bolt/wind_bolt":1}}}}] run enchant @s mr_b:armor/feet/wind_bolt/wind_bolt
 
 
 

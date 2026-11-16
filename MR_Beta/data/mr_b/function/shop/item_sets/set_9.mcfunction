@@ -1,11 +1,11 @@
 title @s actionbar {text:"-- You have bought the Salaryman Kit --",bold:true,color:"gold"}
 scoreboard players remove @s mr_shop_player_currency 850
-item replace entity @s armor.head with netherite_helmet[enchantments={unbreaking:1,"mr_b:collector":1},trim={material:"iron",pattern:"minecraft:coast"}] 1
-item replace entity @s armor.chest with netherite_chestplate[enchantments={unbreaking:1,"mr_b:overtime":1},trim={material:"gold",pattern:"minecraft:spire"}] 1
+item replace entity @s armor.head with netherite_helmet[enchantments={unbreaking:1,"mr_b:armor/head/collector/collector":1},trim={material:"iron",pattern:"minecraft:coast"}] 1
+item replace entity @s armor.chest with netherite_chestplate[enchantments={unbreaking:1,"mr_b:armor/chest/overtime/overtime":1},trim={material:"gold",pattern:"minecraft:spire"}] 1
 item replace entity @s armor.legs with netherite_leggings[enchantments={unbreaking:1},trim={material:"gold",pattern:"minecraft:tide"}] 1
 item replace entity @s armor.feet with netherite_boots[enchantments={unbreaking:1},trim={material:"quartz",pattern:"minecraft:rib"}] 1
 
-give @s netherite_axe[enchantments={"mr_b:ratio":1,sharpness:4}]
+give @s netherite_axe[enchantments={"mr_b:weapon/axe/ratio/ratio":1,sharpness:4}]
 give @s cooked_beef 36
 give @s ender_pearl 4
 give @s potion[potion_contents={custom_color:14729117},custom_name=[{"text":"Cleaving Whirlwind","italic":false}],max_stack_size=64,lore=[[{"text":"Use to rush forward, cleaving everything."}]],rarity=epic,consumable={consume_seconds:1000000000,animation:bow,has_consume_particles:0b},custom_data={ability:true}] 2

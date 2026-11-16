@@ -1,8 +1,8 @@
 {
   "description": "Sonic Boom",
   "exclusive_set": [
-    "mr_b:debilitation",
-    "mr_b:aetherline"
+    "mr_b:weapon/bow/debilitation/debilitation",
+    "mr_b:weapon/bow/aetherline/aetherline"
   ],
   "supported_items": [
     "minecraft:bow"

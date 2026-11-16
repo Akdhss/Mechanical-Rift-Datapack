@@ -76,14 +76,14 @@ execute if entity @s[tag=class_rich] run item modify entity @s armor.feet mr_b:r
 execute at @e[name=player_spawn,distance=0..,type=marker] if entity @s[team=rift_party,distance=..6,tag=party_alive] run advancement grant @s only mr_b:shop_setting/shop_enable
 execute at @e[name=player_spawn,distance=0..,type=marker] if entity @s[team=rift_party,distance=6.25..,tag=party_alive] run advancement grant @s only mr_b:shop_setting/shop_disable
 
-execute if items entity @s weapon.mainhand *[enchantments~[{enchantments:"mr_b:ratio"}]] at @s if entity @e[team=rift_enemy,tag=!mr_ratio_target,distance=..10] run scoreboard players add @s mr_enchant_ratio_time 1
+execute if items entity @s weapon.mainhand *[enchantments~[{enchantments:"mr_b:weapon/axe/ratio/ratio"}]] at @s if entity @e[team=rift_enemy,tag=!mr_ratio_target,distance=..10] run scoreboard players add @s mr_enchant_ratio_time 1
 execute if score @s[tag=blunt_cut_user,tag=ultimate_active] mr_enchant_ratio_time matches 55 run function mr_b:enchant/axe/ratio/ratio_mark_apply
 execute if score @s mr_enchant_ratio_time matches 110 run function mr_b:enchant/axe/ratio/ratio_mark_apply
 
 execute if score @s[tag=!overtime_active] mr_enchant_overtime_kill matches 30.. run function mr_b:enchant/armor/chestplate/overtime/overtime_effect
 execute if entity @s[tag=overtime_active] run scoreboard players add @s mr_enchant_overtime_effect 1
 execute if entity @s[tag=overtime_active] if score @s mr_enchant_overtime_effect matches 30.. run function mr_b:enchant/armor/chestplate/overtime/overtime_effect
-execute unless items entity @s armor.chest *[enchantments~[{enchantments:"mr_b:overtime"}]] run scoreboard players reset @s mr_enchant_overtime_kill
+execute unless items entity @s armor.chest *[enchantments~[{enchantments:"mr_b:armor/chest/overtime/overtime"}]] run scoreboard players reset @s mr_enchant_overtime_kill
 
 execute if entity @s[tag=!party_alive,tag=!party_dead] if score @s ready_state matches 1 at @s run particle dust{color:[0.0,0.84,0.14],scale:1} ~ ~2.5 ~ 0 0 0 0 1
 execute if entity @s[tag=!party_alive,tag=!party_dead] if score @s ready_state matches 0 at @s run particle dust{color:[0.84,0.0,0.0],scale:1} ~ ~2.5 ~ 0 0 0 0 1
@@ -154,7 +154,7 @@ execute if entity @s[tag=alacrity_cooldown] if score @s mr_enchant_alacrity_cd m
 execute if entity @s[tag=alacrity_cooldown] if score @s mr_enchant_alacrity_cd matches ..0 at @s run function mr_b:sfx/skill_ready
 execute if entity @s[tag=alacrity_cooldown] if score @s mr_enchant_alacrity_cd matches ..0 run tag @s remove alacrity_cooldown
 execute if score @s mr_enchant_alacrity_cd matches 1.. run scoreboard players remove @s mr_enchant_alacrity_cd 1
-execute if score @s mr_enchant_blade_call_count matches 1.. if items entity @s weapon.mainhand *[enchantments~[{enchantments:"mr_b:blade_call"}]] at @s anchored eyes run function mr_b:vfx/blade_call_count
+execute if score @s mr_enchant_blade_call_count matches 1.. if items entity @s weapon.mainhand *[enchantments~[{enchantments:"mr_b:weapon/sword/blade_call/blade_call"}]] at @s anchored eyes run function mr_b:vfx/blade_call_count
 
 execute if items entity @s armor.chest *[enchantments~[{enchantments:"mr_b:armor/chest/survivor/survivor"}]] run function mr_b:enchant/armor/chestplate/survivor/survivor_apply
 execute unless items entity @s armor.chest *[enchantments~[{enchantments:"mr_b:armor/chest/survivor/survivor"}]] run function mr_b:enchant/armor/chestplate/survivor/survivor_expire
@@ -191,7 +191,7 @@ execute if score @s[tag=guiding_wind_user] mr_ability_guide_charge matches 3.. r
 execute if score @s[tag=guiding_wind_user] mr_ability_guide_charge matches 2 run scoreboard players reset @s mr_ability_guide_kill
 
 
-execute if entity @s[tag=blade_call_user,distance=0..] if items entity @s weapon.mainhand *[enchantments~[{enchantments:"mr_b:blade_call"}]] run effect give @s weakness 1 255 true
+execute if entity @s[tag=blade_call_user,distance=0..] if items entity @s weapon.mainhand *[enchantments~[{enchantments:"mr_b:weapon/sword/blade_call/blade_call"}]] run effect give @s weakness 1 255 true
 execute if entity @s[tag=blade_call_user] if score @s mr_enchant_blade_call_kill_ult matches 20.. run function mr_b:enchant/sword/blade_call/blade_call_give
 execute if entity @s[tag=guiding_wind_user] at @s if score @s mr_ability_guide_kill matches 15.. run function mr_b:ability/sword/guiding_wind/guiding_wind_give
 

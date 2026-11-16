@@ -2,7 +2,7 @@ tellraw @a {text:"----------------------------------------",bold:true,color:"gol
 tellraw @a {text:"",bold:true,color:"gold"}
 
 
-title @a[team=rift_party] title {text:"-- FLOOR CLEARED --",bold:true,color:"gray"}
+title @a[team=rift_party] title {text:"-- RUN CLEARED --",bold:true,color:"gray"}
 title @a[team=rift_party] subtitle {text:"",bold:true,color:"gray"}
 gamemode creative @a[team=rift_party]
 tellraw @a {text:"",bold:true,color:"gold"}

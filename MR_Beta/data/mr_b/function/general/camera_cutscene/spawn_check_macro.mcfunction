@@ -4,7 +4,8 @@ gamemode spectator @s
 tag @s add camera_spectator
 
 # Summon 50 blocks above the player's exact coordinates
-$summon minecraft:item_display $(x2) ~50 $(z2) {view_range:0f,teleport_duration:40,Tags:["camera","camera_new"],Rotation:[$(r1_2)f,90f]}
+#$summon minecraft:item_display $(x) ~50 $(z) {view_range:0f,teleport_duration:20,Tags:["camera","camera_new"],Rotation:[$(r1)f,90f]}
+$summon minecraft:item_display $(x2) ~50 $(z2) {view_range:0f,teleport_duration:30,Tags:["camera","camera_new"],Rotation:[$(r1_2)f,90f]}
 
 # Link UUID scores to this exact new camera
 scoreboard players operation @e[type=item_display,tag=camera_new,limit=1] uuid0 = @s uuid0

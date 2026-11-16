@@ -7,7 +7,7 @@
           "predicates": {
             "minecraft:enchantments": [
               {
-                "enchantments": "mr_b:enchant_dummy"
+                "enchantments": "mr_b:base/enchant_dummy"
               }
             ]
           }

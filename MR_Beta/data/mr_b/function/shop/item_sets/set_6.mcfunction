@@ -1,12 +1,12 @@
 title @s actionbar {text:"-- You have bought the Equinox Kit --",bold:true,color:"gold"}
 scoreboard players remove @s mr_shop_player_currency 850
 item replace entity @s armor.head with netherite_helmet[trim={material:"redstone",pattern:"minecraft:tide"}] 1
-item replace entity @s armor.chest with netherite_chestplate[enchantments={"mr_b:lily":1},trim={material:"emerald",pattern:"minecraft:bolt"}] 1
-item replace entity @s armor.legs with netherite_leggings[enchantments={"mr_b:season":1},trim={material:"emerald",pattern:"minecraft:wild"}] 1
+item replace entity @s armor.chest with netherite_chestplate[enchantments={"mr_b:armor/chest/lily/lily":1},trim={material:"emerald",pattern:"minecraft:bolt"}] 1
+item replace entity @s armor.legs with netherite_leggings[enchantments={"mr_b:armor/legs/season/season":1},trim={material:"emerald",pattern:"minecraft:wild"}] 1
 item replace entity @s armor.feet with netherite_boots[trim={material:"redstone",pattern:"minecraft:bolt"}] 1
 
-give @s bow[custom_name="Dusk's Mea Culpa",rarity=epic,enchantments={infinity:1,power:5,unbreaking:3,"mr_b:debilitation":1}] 1
-give @s bow[custom_name="Dawn's Good Intentions",rarity=epic,enchantments={infinity:1,power:2,punch:2,unbreaking:3,"mr_b:aetherline":1}] 1
+give @s bow[custom_name="Dusk's Mea Culpa",rarity=epic,enchantments={infinity:1,power:5,unbreaking:3,"mr_b:weapon/bow/debilitation/debilitation":1}] 1
+give @s bow[custom_name="Dawn's Good Intentions",rarity=epic,enchantments={infinity:1,power:2,punch:2,unbreaking:3,"mr_b:weapon/bow/aetherline/aetherline":1}] 1
 give @s cooked_beef 36
 give @s ender_pearl 4
 

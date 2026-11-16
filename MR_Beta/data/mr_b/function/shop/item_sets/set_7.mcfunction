@@ -2,11 +2,11 @@ title @s actionbar {text:"-- You have bought the Winter's Queen Kit --",bold:tru
 scoreboard players remove @s mr_shop_player_currency 850
 item replace entity @s armor.head with netherite_helmet[trim={material:"lapis",pattern:"minecraft:dune"}] 1
 item replace entity @s armor.chest with netherite_chestplate[trim={material:"diamond",pattern:"minecraft:flow"}] 1
-item replace entity @s armor.legs with netherite_leggings[enchantments={"mr_b:season":1},trim={material:"lapis",pattern:"minecraft:silence"}] 1
+item replace entity @s armor.legs with netherite_leggings[enchantments={"mr_b:armor/legs/season/season":1},trim={material:"lapis",pattern:"minecraft:silence"}] 1
 item replace entity @s armor.feet with netherite_boots[trim={material:"diamond",pattern:"minecraft:silence"}] 1
 
-give @s bow[custom_name="Frostfire",rarity=epic,enchantments={infinity:1,power:4,unbreaking:3,"mr_b:coalescence":1}] 1
-give @s bow[custom_name="Hoarfrost",rarity=epic,enchantments={infinity:1,power:4,unbreaking:3,"mr_b:shatterpoint":1}] 1
+give @s bow[custom_name="Frostfire",rarity=epic,enchantments={infinity:1,power:4,unbreaking:3,"mr_b:weapon/bow/coalescence/coalescence":1}] 1
+give @s bow[custom_name="Hoarfrost",rarity=epic,enchantments={infinity:1,power:4,unbreaking:3,"mr_b:weapon/bow/shatterpoint/shatterpoint":1}] 1
 give @s cooked_beef 36
 give @s ender_pearl 4
 

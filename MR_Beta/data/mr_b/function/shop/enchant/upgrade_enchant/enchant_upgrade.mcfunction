@@ -1,122 +1,83 @@
-
-execute if items entity @s[tag=enchant_celerity,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:celerity":1}}}}] weapon.mainhand diamond_sword run function mr_b:shop/enchant/enchant_apply/weapon/sword/celerity
-execute if items entity @s[tag=enchant_celerity,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:celerity":1}}}}] weapon.mainhand netherite_sword run function mr_b:shop/enchant/enchant_apply/weapon/sword/celerity
-
-execute if items entity @s[tag=enchant_alacrity,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:alacrity":1}}}}] weapon.mainhand diamond_sword run function mr_b:shop/enchant/enchant_apply/weapon/sword/alacrity
-execute if items entity @s[tag=enchant_alacrity,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:alacrity":1}}}}] weapon.mainhand netherite_sword run function mr_b:shop/enchant/enchant_apply/weapon/sword/alacrity
-
-execute if items entity @s[tag=enchant_bloodsong,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:bloodsong":1}}}}] weapon.mainhand diamond_sword run function mr_b:shop/enchant/enchant_apply/weapon/sword/bloodsong
-execute if items entity @s[tag=enchant_bloodsong,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:bloodsong":1}}}}] weapon.mainhand netherite_sword run function mr_b:shop/enchant/enchant_apply/weapon/sword/bloodsong
-execute if items entity @s[tag=enchant_bloodsong,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:bloodsong":1}}}}] weapon.mainhand diamond_axe run function mr_b:shop/enchant/enchant_apply/weapon/sword/bloodsong
-execute if items entity @s[tag=enchant_bloodsong,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:bloodsong":1}}}}] weapon.mainhand netherite_axe run function mr_b:shop/enchant/enchant_apply/weapon/sword/bloodsong
-
-execute if items entity @s[tag=enchant_aetherline,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:aetherline":1}}}}] weapon.mainhand bow run function mr_b:shop/enchant/enchant_apply/weapon/bow/aetherline
-
-execute if items entity @s[tag=enchant_debilitation,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:debilitation":1}}}}] weapon.mainhand bow run function mr_b:shop/enchant/enchant_apply/weapon/bow/debilitation
-
-execute if items entity @s[tag=enchant_feast,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:weapon/spear/feast/feast":1}}}}] weapon.mainhand diamond_spear run function mr_b:shop/enchant/enchant_apply/weapon/spear/feast
-execute if items entity @s[tag=enchant_feast,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:weapon/spear/feast/feast":1}}}}] weapon.mainhand netherite_spear run function mr_b:shop/enchant/enchant_apply/weapon/spear/feast
-execute if items entity @s[tag=enchant_feast,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:weapon/spear/feast/feast":1}}}}] weapon.mainhand diamond_sword run function mr_b:shop/enchant/enchant_apply/weapon/spear/feast
-execute if items entity @s[tag=enchant_feast,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:weapon/spear/feast/feast":1}}}}] weapon.mainhand netherite_sword run function mr_b:shop/enchant/enchant_apply/weapon/spear/feast
-execute if items entity @s[tag=enchant_feast,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:weapon/spear/feast/feast":1}}}}] weapon.mainhand diamond_axe run function mr_b:shop/enchant/enchant_apply/weapon/spear/feast
-execute if items entity @s[tag=enchant_feast,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:weapon/spear/feast/feast":1}}}}] weapon.mainhand netherite_axe run function mr_b:shop/enchant/enchant_apply/weapon/spear/feast
-
-execute if items entity @s[tag=enchant_joust,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:weapon/spear/joust/joust":1}}}}] weapon.mainhand diamond_spear run function mr_b:shop/enchant/enchant_apply/weapon/spear/joust
-execute if items entity @s[tag=enchant_joust,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:weapon/spear/joust/joust":1}}}}] weapon.mainhand netherite_spear run function mr_b:shop/enchant/enchant_apply/weapon/spear/joust
-
-execute if items entity @s[tag=enchant_hail_mary,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:hail_mary":1}}}}] weapon.mainhand diamond_chestplate run function mr_b:shop/enchant/enchant_apply/armor/chest/hail_mary
-execute if items entity @s[tag=enchant_hail_mary,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:hail_mary":1}}}}] weapon.mainhand netherite_chestplate run function mr_b:shop/enchant/enchant_apply/armor/chest/hail_mary
-
-execute if items entity @s[tag=enchant_lily,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:lily":1}}}}] weapon.mainhand diamond_chestplate run function mr_b:shop/enchant/enchant_apply/armor/chest/lily
-execute if items entity @s[tag=enchant_lily,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:lily":1}}}}] weapon.mainhand netherite_chestplate run function mr_b:shop/enchant/enchant_apply/armor/chest/lily
-
-execute if items entity @s[tag=enchant_season,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:season":1}}}}] weapon.mainhand diamond_leggings run function mr_b:shop/enchant/enchant_apply/armor/legs/season
-execute if items entity @s[tag=enchant_season,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:season":1}}}}] weapon.mainhand netherite_leggings run function mr_b:shop/enchant/enchant_apply/armor/legs/season
-
-execute if items entity @s[tag=enchant_wind_bolt,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:wind_bolt":1}}}}] weapon.mainhand diamond_boots run function mr_b:shop/enchant/enchant_apply/armor/feet/wind_bolt
-execute if items entity @s[tag=enchant_wind_bolt,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:wind_bolt":1}}}}] weapon.mainhand netherite_boots run function mr_b:shop/enchant/enchant_apply/armor/feet/wind_bolt
-
-execute if items entity @s[tag=enchant_coalescence,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:coalescence":1}}}}] weapon.mainhand bow run function mr_b:shop/enchant/enchant_apply/weapon/bow/coalescence
-
-execute if items entity @s[tag=enchant_shatterpoint,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:shatterpoint":1}}}}] weapon.mainhand bow run function mr_b:shop/enchant/enchant_apply/weapon/bow/shatterpoint
-
-execute if items entity @s[tag=enchant_icebreaker,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:icebreaker":1}}}}] weapon.mainhand diamond_axe run function mr_b:shop/enchant/enchant_apply/weapon/axe/icebreaker
-execute if items entity @s[tag=enchant_icebreaker,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:icebreaker":1}}}}] weapon.mainhand netherite_axe run function mr_b:shop/enchant/enchant_apply/weapon/axe/icebreaker
-
-execute if items entity @s[tag=enchant_bloomshot,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:bloom_shot":1}}}}] weapon.mainhand crossbow run function mr_b:shop/enchant/enchant_apply/weapon/crossbow/bloomshot
-
-execute if items entity @s[tag=enchant_cloudstep,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:cloudstep":1}}}}] weapon.mainhand diamond_boots run function mr_b:shop/enchant/enchant_apply/armor/feet/cloudstep
-execute if items entity @s[tag=enchant_cloudstep,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:cloudstep":1}}}}] weapon.mainhand netherite_boots run function mr_b:shop/enchant/enchant_apply/armor/feet/cloudstep
-
-execute if items entity @s[tag=enchant_ratio,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:ratio":1}}}}] weapon.mainhand diamond_axe run function mr_b:shop/enchant/enchant_apply/weapon/axe/ratio
-execute if items entity @s[tag=enchant_ratio,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:ratio":1}}}}] weapon.mainhand netherite_axe run function mr_b:shop/enchant/enchant_apply/weapon/axe/ratio
-
-execute if items entity @s[tag=enchant_overtime,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:overtime":1}}}}] weapon.mainhand diamond_chestplate run function mr_b:shop/enchant/enchant_apply/armor/chest/overtime
-execute if items entity @s[tag=enchant_overtime,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:overtime":1}}}}] weapon.mainhand netherite_chestplate run function mr_b:shop/enchant/enchant_apply/armor/chest/overtime
-
-execute if items entity @s[tag=enchant_collector,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:collector":1}}}}] weapon.mainhand diamond_helmet run function mr_b:shop/enchant/enchant_apply/armor/head/collector
-execute if items entity @s[tag=enchant_collector,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:collector":1}}}}] weapon.mainhand netherite_helmet run function mr_b:shop/enchant/enchant_apply/armor/head/collector
-
-execute if items entity @s[tag=enchant_skypiercer,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:skypiercer":1}}}}] weapon.mainhand bow run function mr_b:shop/enchant/enchant_apply/weapon/crossbow/skypiercer
-execute if items entity @s[tag=enchant_skypiercer,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:skypiercer":1}}}}] weapon.mainhand crossbow run function mr_b:shop/enchant/enchant_apply/weapon/crossbow/skypiercer
-
-execute if items entity @s[tag=enchant_payload,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:payload":1}}}}] weapon.mainhand crossbow run function mr_b:shop/enchant/enchant_apply/weapon/bow/payload
-
-execute if items entity @s[tag=enchant_radiance,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:radiance":1}}}}] weapon.mainhand diamond_chestplate run function mr_b:shop/enchant/enchant_apply/armor/chest/radiance
-execute if items entity @s[tag=enchant_radiance,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:radiance":1}}}}] weapon.mainhand netherite_chestplate run function mr_b:shop/enchant/enchant_apply/armor/chest/radiance
-
-execute if items entity @s[tag=enchant_lightweight,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:weapon/shield/lightweight/lightweight":1}}}}] weapon.mainhand shield run function mr_b:shop/enchant/enchant_apply/weapon/shield/lightweight
-
-execute if items entity @s[tag=enchant_bulwark,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:weapon/shield/bulwark/bulwark":1}}}}] weapon.mainhand shield run function mr_b:shop/enchant/enchant_apply/weapon/shield/bulwark
-
-execute if items entity @s[tag=enchant_sonic_boom,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:weapon/bow/sonic_boom/sonic_boom":1}}}}] weapon.mainhand bow run function mr_b:shop/enchant/enchant_apply/weapon/bow/sonic_boom
-execute if items entity @s[tag=enchant_sonic_boom,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:weapon/bow/sonic_boom/sonic_boom":1}}}}] weapon.mainhand crossbow run function mr_b:shop/enchant/enchant_apply/weapon/bow/sonic_boom
-
-execute if items entity @s[tag=enchant_compounding,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:weapon/bow/compounding/compounding":1}}}}] weapon.mainhand bow run function mr_b:shop/enchant/enchant_apply/weapon/bow/compounding
-execute if items entity @s[tag=enchant_compounding,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:weapon/bow/compounding/compounding":1}}}}] weapon.mainhand crossbow run function mr_b:shop/enchant/enchant_apply/weapon/bow/compounding
-
-execute if items entity @s[tag=enchant_defeatist,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:armor/legs/defeatist/defeatist":1}}}}] weapon.mainhand diamond_leggings run function mr_b:shop/enchant/enchant_apply/armor/legs/defeatist
-execute if items entity @s[tag=enchant_defeatist,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:armor/legs/defeatist/defeatist":1}}}}] weapon.mainhand netherite_leggings run function mr_b:shop/enchant/enchant_apply/armor/legs/defeatist
-
-execute if items entity @s[tag=enchant_loudmouth,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:armor/head/loudmouth/loudmouth":1}}}}] weapon.mainhand diamond_helmet run function mr_b:shop/enchant/enchant_apply/armor/head/loudmouth
-execute if items entity @s[tag=enchant_loudmouth,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:armor/head/loudmouth/loudmouth":1}}}}] weapon.mainhand netherite_helmet run function mr_b:shop/enchant/enchant_apply/armor/head/loudmouth
-
-execute if items entity @s[tag=enchant_sturdy_body,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:armor/chest/sturdy_body/sturdy_body":1}}}}] weapon.mainhand diamond_chestplate run function mr_b:shop/enchant/enchant_apply/armor/chest/sturdy_body
-execute if items entity @s[tag=enchant_sturdy_body,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:armor/chest/sturdy_body/sturdy_body":1}}}}] weapon.mainhand netherite_chestplate run function mr_b:shop/enchant/enchant_apply/armor/chest/sturdy_body
-
-execute if items entity @s[tag=enchant_gold_plating,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:armor/chest/gold_plating/gold_plating":1}}}}] weapon.mainhand diamond_chestplate run function mr_b:shop/enchant/enchant_apply/armor/chest/gold_plating
-execute if items entity @s[tag=enchant_gold_plating,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:armor/chest/gold_plating/gold_plating":1}}}}] weapon.mainhand netherite_chestplate run function mr_b:shop/enchant/enchant_apply/armor/chest/gold_plating
-
-execute if items entity @s[tag=enchant_lacerate,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:weapon/sword/lacerate/lacerate":1}}}}] weapon.mainhand diamond_sword run function mr_b:shop/enchant/enchant_apply/weapon/sword/lacerate
-execute if items entity @s[tag=enchant_lacerate,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:weapon/sword/lacerate/lacerate":1}}}}] weapon.mainhand netherite_sword run function mr_b:shop/enchant/enchant_apply/weapon/sword/lacerate
-execute if items entity @s[tag=enchant_lacerate,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:weapon/sword/lacerate/lacerate":1}}}}] weapon.mainhand diamond_axe run function mr_b:shop/enchant/enchant_apply/weapon/sword/lacerate
-execute if items entity @s[tag=enchant_lacerate,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:weapon/sword/lacerate/lacerate":1}}}}] weapon.mainhand netherite_axe run function mr_b:shop/enchant/enchant_apply/weapon/sword/lacerate
-
-
-execute if items entity @s[tag=enchant_adrenaline,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:armor/head/adrenaline/adrenaline":1}}}}] weapon.mainhand diamond_helmet run function mr_b:shop/enchant/enchant_apply/armor/head/adrenaline
-execute if items entity @s[tag=enchant_adrenaline,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:armor/head/adrenaline/adrenaline":1}}}}] weapon.mainhand netherite_helmet run function mr_b:shop/enchant/enchant_apply/armor/head/adrenaline
-
-execute if items entity @s[tag=enchant_survivor,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:armor/chest/survivor/survivor":1}}}}] weapon.mainhand diamond_chestplate run function mr_b:shop/enchant/enchant_apply/armor/chest/survivor
-execute if items entity @s[tag=enchant_survivor,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:armor/chest/survivor/survivor":1}}}}] weapon.mainhand netherite_chestplate run function mr_b:shop/enchant/enchant_apply/armor/chest/survivor
-
-execute if items entity @s[tag=enchant_annihilate,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:weapon/axe/annihilate/annihilate":1}}}}] weapon.mainhand diamond_axe run function mr_b:shop/enchant/enchant_apply/weapon/axe/annihilate
-execute if items entity @s[tag=enchant_annihilate,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:weapon/axe/annihilate/annihilate":1}}}}] weapon.mainhand netherite_axe run function mr_b:shop/enchant/enchant_apply/weapon/axe/annihilate
-
-execute if items entity @s[tag=enchant_concussion,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:weapon/axe/concussion/concussion":1}}}}] weapon.mainhand diamond_axe run function mr_b:shop/enchant/enchant_apply/weapon/axe/concussion
-execute if items entity @s[tag=enchant_concussion,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:weapon/axe/concussion/concussion":1}}}}] weapon.mainhand netherite_axe run function mr_b:shop/enchant/enchant_apply/weapon/axe/concussion
-
-execute if items entity @s[tag=enchant_tethering,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:weapon/crossbow/tethering/tethering":1}}}}] weapon.mainhand bow run function mr_b:shop/enchant/enchant_apply/weapon/crossbow/tethering
-execute if items entity @s[tag=enchant_tethering,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:weapon/crossbow/tethering/tethering":1}}}}] weapon.mainhand crossbow run function mr_b:shop/enchant/enchant_apply/weapon/crossbow/tethering
-
-execute if items entity @s[tag=enchant_barbed,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:weapon/crossbow/barbed/barbed":1}}}}] weapon.mainhand bow run function mr_b:shop/enchant/enchant_apply/weapon/crossbow/barbed
-execute if items entity @s[tag=enchant_barbed,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:weapon/crossbow/barbed/barbed":1}}}}] weapon.mainhand crossbow run function mr_b:shop/enchant/enchant_apply/weapon/crossbow/barbed
-
-execute if items entity @s[tag=enchant_counterstance,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:weapon/shield/counterstance/counterstance":1}}}}] weapon.mainhand shield run function mr_b:shop/enchant/enchant_apply/weapon/shield/counterstance
-
-execute if items entity @s[tag=enchant_thorned_guard,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:weapon/shield/thorned_guard/thorned_guard":1}}}}] weapon.mainhand shield run function mr_b:shop/enchant/enchant_apply/weapon/shield/thorned_guard
-
-execute if items entity @s[tag=enchant_last_stand,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:armor/chest/determination/determination":1}}}}] weapon.mainhand diamond_chestplate run function mr_b:shop/enchant/enchant_apply/armor/chest/last_stand
-execute if items entity @s[tag=enchant_last_stand,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:armor/chest/determination/determination":1}}}}] weapon.mainhand netherite_chestplate run function mr_b:shop/enchant/enchant_apply/armor/chest/last_stand
-
-execute if items entity @s[tag=enchant_agile,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:armor/feet/agile/agile":1}}}}] weapon.mainhand diamond_boots run function mr_b:shop/enchant/enchant_apply/armor/feet/agile
-execute if items entity @s[tag=enchant_agile,nbt=!{SelectedItem:{components:{"minecraft:enchantments":{"mr_b:armor/feet/agile/agile":1}}}}] weapon.mainhand netherite_boots run function mr_b:shop/enchant/enchant_apply/armor/feet/agile
+# warn-off-file execute-group
+# Data-driven enchantment application.
+# The registry supplies the enchantment ID and compatible item; the shared handlers validate both.
+execute if entity @s[tag=enchant_celerity] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.celerity.1
+execute if entity @s[tag=enchant_celerity] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.celerity.2
+execute if entity @s[tag=enchant_alacrity] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.alacrity.1
+execute if entity @s[tag=enchant_alacrity] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.alacrity.2
+execute if entity @s[tag=enchant_bloodsong] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.bloodsong.1
+execute if entity @s[tag=enchant_bloodsong] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.bloodsong.2
+execute if entity @s[tag=enchant_bloodsong] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.bloodsong.3
+execute if entity @s[tag=enchant_bloodsong] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.bloodsong.4
+execute if entity @s[tag=enchant_aetherline] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.aetherline.1
+execute if entity @s[tag=enchant_debilitation] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.debilitation.1
+execute if entity @s[tag=enchant_feast] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.feast.1
+execute if entity @s[tag=enchant_feast] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.feast.2
+execute if entity @s[tag=enchant_feast] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.feast.3
+execute if entity @s[tag=enchant_feast] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.feast.4
+execute if entity @s[tag=enchant_feast] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.feast.5
+execute if entity @s[tag=enchant_feast] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.feast.6
+execute if entity @s[tag=enchant_joust] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.joust.1
+execute if entity @s[tag=enchant_joust] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.joust.2
+execute if entity @s[tag=enchant_hail_mary] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.hail_mary.1
+execute if entity @s[tag=enchant_hail_mary] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.hail_mary.2
+execute if entity @s[tag=enchant_lily] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.lily.1
+execute if entity @s[tag=enchant_lily] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.lily.2
+execute if entity @s[tag=enchant_season] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.season.1
+execute if entity @s[tag=enchant_season] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.season.2
+execute if entity @s[tag=enchant_wind_bolt] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.wind_bolt.1
+execute if entity @s[tag=enchant_wind_bolt] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.wind_bolt.2
+execute if entity @s[tag=enchant_coalescence] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.coalescence.1
+execute if entity @s[tag=enchant_shatterpoint] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.shatterpoint.1
+execute if entity @s[tag=enchant_icebreaker] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.icebreaker.1
+execute if entity @s[tag=enchant_icebreaker] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.icebreaker.2
+execute if entity @s[tag=enchant_bloomshot] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.bloomshot.1
+execute if entity @s[tag=enchant_cloudstep] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.cloudstep.1
+execute if entity @s[tag=enchant_cloudstep] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.cloudstep.2
+execute if entity @s[tag=enchant_ratio] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.ratio.1
+execute if entity @s[tag=enchant_ratio] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.ratio.2
+execute if entity @s[tag=enchant_overtime] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.overtime.1
+execute if entity @s[tag=enchant_overtime] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.overtime.2
+execute if entity @s[tag=enchant_collector] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.collector.1
+execute if entity @s[tag=enchant_collector] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.collector.2
+execute if entity @s[tag=enchant_skypiercer] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.skypiercer.1
+execute if entity @s[tag=enchant_skypiercer] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.skypiercer.2
+execute if entity @s[tag=enchant_payload] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.payload.1
+execute if entity @s[tag=enchant_radiance] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.radiance.1
+execute if entity @s[tag=enchant_radiance] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.radiance.2
+execute if entity @s[tag=enchant_lightweight] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.lightweight.1
+execute if entity @s[tag=enchant_bulwark] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.bulwark.1
+execute if entity @s[tag=enchant_sonic_boom] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.sonic_boom.1
+execute if entity @s[tag=enchant_sonic_boom] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.sonic_boom.2
+execute if entity @s[tag=enchant_compounding] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.compounding.1
+execute if entity @s[tag=enchant_compounding] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.compounding.2
+execute if entity @s[tag=enchant_defeatist] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.defeatist.1
+execute if entity @s[tag=enchant_defeatist] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.defeatist.2
+execute if entity @s[tag=enchant_loudmouth] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.loudmouth.1
+execute if entity @s[tag=enchant_loudmouth] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.loudmouth.2
+execute if entity @s[tag=enchant_sturdy_body] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.sturdy_body.1
+execute if entity @s[tag=enchant_sturdy_body] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.sturdy_body.2
+execute if entity @s[tag=enchant_gold_plating] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.gold_plating.1
+execute if entity @s[tag=enchant_gold_plating] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.gold_plating.2
+execute if entity @s[tag=enchant_lacerate] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.lacerate.1
+execute if entity @s[tag=enchant_lacerate] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.lacerate.2
+execute if entity @s[tag=enchant_lacerate] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.lacerate.3
+execute if entity @s[tag=enchant_lacerate] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.lacerate.4
+execute if entity @s[tag=enchant_adrenaline] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.adrenaline.1
+execute if entity @s[tag=enchant_adrenaline] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.adrenaline.2
+execute if entity @s[tag=enchant_survivor] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.survivor.1
+execute if entity @s[tag=enchant_survivor] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.survivor.2
+execute if entity @s[tag=enchant_annihilate] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.annihilate.1
+execute if entity @s[tag=enchant_annihilate] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.annihilate.2
+execute if entity @s[tag=enchant_concussion] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.concussion.1
+execute if entity @s[tag=enchant_concussion] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.concussion.2
+execute if entity @s[tag=enchant_tethering] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.tethering.1
+execute if entity @s[tag=enchant_tethering] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.tethering.2
+execute if entity @s[tag=enchant_barbed] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.barbed.1
+execute if entity @s[tag=enchant_barbed] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.barbed.2
+execute if entity @s[tag=enchant_counterstance] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.counterstance.1
+execute if entity @s[tag=enchant_thorned_guard] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.thorned_guard.1
+execute if entity @s[tag=enchant_last_stand] run function mr_b:shop/enchant/enchant_apply/last_stand with storage mr_b:shop apply.last_stand.1
+execute if entity @s[tag=enchant_last_stand] run function mr_b:shop/enchant/enchant_apply/last_stand with storage mr_b:shop apply.last_stand.2
+execute if entity @s[tag=enchant_agile] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.agile.1
+execute if entity @s[tag=enchant_agile] run function mr_b:shop/enchant/enchant_apply/apply_macro with storage mr_b:shop apply.agile.2

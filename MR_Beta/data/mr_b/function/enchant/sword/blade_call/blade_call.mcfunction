@@ -45,7 +45,7 @@ tag @s remove raycast_blade_call
 
 scoreboard players reset @s mr_enchant_blade_call_kill_ult
 
-execute if score @s mr_enchant_blade_call_count matches ..0 run clear @s netherite_sword[enchantments={"mr_b:blade_call":1}] 1
+execute if score @s mr_enchant_blade_call_count matches ..0 run clear @s netherite_sword[enchantments={"mr_b:weapon/sword/blade_call/blade_call":1}] 1
 execute if score @s mr_enchant_blade_call_count matches ..0 run tag @s remove ultimate_active
 scoreboard players reset .distance global_range
 

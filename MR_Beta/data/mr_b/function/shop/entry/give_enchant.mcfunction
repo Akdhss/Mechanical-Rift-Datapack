@@ -1,0 +1,1 @@
+$give @s paper[custom_name=[{"text":"Enchant - [ $(name) ]","italic":false}],rarity=epic,food={can_always_eat:1b,nutrition:1,saturation:1},consumable={consume_seconds:100000,animation:toot_horn,has_consume_particles:0b},custom_data={enchant:"$(key)"},enchantments={"mr_b:base/enchant_dummy":1}]

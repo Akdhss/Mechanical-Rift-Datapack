@@ -3,7 +3,7 @@ scoreboard players remove @s mr_shop_player_currency 850
 item replace entity @s armor.head with netherite_helmet[trim={material:"iron",pattern:"minecraft:ward"}] 1
 item replace entity @s armor.chest with netherite_chestplate[trim={material:"quartz",pattern:"minecraft:flow"}] 1
 item replace entity @s armor.legs with netherite_leggings[trim={material:"redstone",pattern:"minecraft:wayfinder"}] 1
-item replace entity @s armor.feet with netherite_boots[enchantments={"mr_b:wind_bolt":1},trim={material:"quartz",pattern:"minecraft:wild"}] 1
+item replace entity @s armor.feet with netherite_boots[enchantments={"mr_b:armor/feet/wind_bolt/wind_bolt":1},trim={material:"quartz",pattern:"minecraft:wild"}] 1
 
 scoreboard players reset @s mr_enchant_blade_call_kill_ult
 scoreboard players reset @s mr_ability_guide_kill
@@ -12,7 +12,7 @@ tag @s add blade_call_user
 tag @s add guiding_wind_user
 tag @s add has_ultimate
 
-give @s bow[enchantments={power:5,infinity:1,unbreaking:3,"mr_b:skypiercer":1,"mr_b:weapon/bow/compounding/compounding":1}] 1
+give @s bow[enchantments={power:5,infinity:1,unbreaking:3,"mr_b:weapon/crossbow/skypiercer/skypiercer":1,"mr_b:weapon/bow/compounding/compounding":1}] 1
 give @s potion[potion_contents={custom_color:9078660},custom_name=[{"text":"Guiding Wind","italic":false}],max_stack_size=64,lore=[[{"text":"Use to harness the wind's guidance."}]],rarity=epic,consumable={consume_seconds:1000000000,animation:bow,has_consume_particles:0b},custom_data={ability:true}]
 give @s cooked_beef 36
 give @s ender_pearl 4

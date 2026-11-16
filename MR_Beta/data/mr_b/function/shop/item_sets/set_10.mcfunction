@@ -1,7 +1,7 @@
 title @s actionbar {text:"-- You have bought the V.I.P Kit --",bold:true,color:"gold"}
 scoreboard players remove @s mr_shop_player_currency 850
 item replace entity @s armor.head with golden_helmet[trim={pattern:raiser,material:netherite},enchantment_glint_override=true,enchantments={binding_curse:1,protection:2}]
-item replace entity @s armor.chest with golden_chestplate[trim={pattern:raiser,material:netherite},enchantment_glint_override=true,enchantments={binding_curse:1,protection:2,"mr_b:armor/chest/gold_plating/gold_plating":1,"mr_b:radiance":1}]
+item replace entity @s armor.chest with golden_chestplate[trim={pattern:raiser,material:netherite},enchantment_glint_override=true,enchantments={binding_curse:1,protection:2,"mr_b:armor/chest/gold_plating/gold_plating":1,"mr_b:armor/chest/radiance/radiance":1}]
 item replace entity @s armor.legs with golden_leggings[trim={pattern:raiser,material:netherite},enchantment_glint_override=true,enchantments={binding_curse:1,protection:2}]
 item replace entity @s armor.feet with golden_boots[trim={pattern:raiser,material:netherite},enchantment_glint_override=true,enchantments={binding_curse:1,protection:2}]
 

@@ -1,5 +1,5 @@
-execute unless items entity @s armor.chest *[enchantments~[{enchantments:"mr_b:overtime"}]] run scoreboard players reset @s mr_enchant_overtime_kill
-execute unless items entity @s armor.chest *[enchantments~[{enchantments:"mr_b:overtime"}]] run return fail
+execute unless items entity @s armor.chest *[enchantments~[{enchantments:"mr_b:armor/chest/overtime/overtime"}]] run scoreboard players reset @s mr_enchant_overtime_kill
+execute unless items entity @s armor.chest *[enchantments~[{enchantments:"mr_b:armor/chest/overtime/overtime"}]] run return fail
 execute if entity @s[tag=!overtime_active] run playsound mr_b:overtime_notif master @s ~ ~ ~ 0.25
 execute if entity @s[tag=!overtime_active] run function mr_b:enchant/armor/chestplate/overtime/overtime_line
 
