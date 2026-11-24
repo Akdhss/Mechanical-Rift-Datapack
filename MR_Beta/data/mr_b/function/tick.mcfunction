@@ -159,3 +159,8 @@ execute as @e[tag=!checked,distance=0..,type=item] run tag @s add checked
 
 execute as @e[type=item_display,tag=camera] run scoreboard players add @s camera_time 1
 execute as @e[type=item_display,tag=camera,scores={camera_time=30..}] at @s run function mr_b:general/camera_cutscene/clear_camera
+
+execute if entity @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{shop_item:1b}}}}] as @e[type=minecraft:chest_minecart,tag=menu_cart] at @s run function mr_b:ui/shop/tick
+kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{shop_item:1b}}}}]
+execute as @e[tag=menu_cart,type=minecraft:chest_minecart] at @s as @a if score @s shop_id = @e[tag=menu_cart,type=minecraft:chest_minecart,limit=1,sort=nearest] shop_id at @s run tp @e[tag=menu_cart,type=minecraft:chest_minecart,limit=1,sort=nearest] ~ ~1 ~
+

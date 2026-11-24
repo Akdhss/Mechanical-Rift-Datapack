@@ -286,9 +286,17 @@ execute if predicate mr_b:on_ground run scoreboard players set @s mr_player_jump
 execute if score @s mr_player_jump_check matches 1 unless score @s mr_player_jump_hold matches 2.. if predicate mr_b:player/movement/jump run function mr_b:enchant/armor/boots/mid_air_check_jump
 execute if score @s mr_player_jump_check matches 0 unless predicate mr_b:on_ground run scoreboard players set @s mr_player_jump_check 1
 
-#------------------------------------------------------- [ SHOP UI ] ------------------------------------------------------- 
 
+execute if items entity @s player.cursor *[minecraft:custom_data~{shop_item:1b}] at @s run function mr_b:ui/shop/player_input
+execute if items entity @s container.* *[minecraft:custom_data~{shop_item:1b}] as @e[tag=menu_cart,distance=0..,type=minecraft:chest_minecart] at @s run function mr_b:ui/shop/tick
+execute if items entity @s container.* *[minecraft:custom_data~{shop_item:1b}] run clear @s *[minecraft:custom_data~{shop_item:1b}]
 
-execute if items entity @s weapon.* *[custom_data={ui:1b}] run function mr_b:tick_branch/shop_ui/teleport
-execute unless items entity @s weapon.* *[custom_data={ui:1b}] if score @s ui.id matches 0.. run function mr_b:tick_branch/shop_ui/close
+scoreboard players operation *this uuid0 = @s uuid0
+scoreboard players operation *this uuid1 = @s uuid1
+scoreboard players operation *this uuid2 = @s uuid2
+scoreboard players operation *this uuid3 = @s uuid3
+
+execute if items entity @s weapon.* minecraft:written_book[use_cooldown={seconds:1,cooldown_group:nondroppable}] unless entity @e[type=minecraft:chest_minecart,tag=menu_cart,predicate=mr_b:find/match_id] at @s run function mr_b:ui/shop/summon
+
+execute unless items entity @s weapon.* minecraft:written_book[use_cooldown={seconds:1,cooldown_group:nondroppable}] run kill @e[type=minecraft:chest_minecart,tag=menu_cart,predicate=mr_b:find/match_id]
 

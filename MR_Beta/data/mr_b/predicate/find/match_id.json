@@ -1,0 +1,102 @@
+
+{
+  "type": "minecraft:all_of",
+  "terms": [
+    {
+      "type": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "uuid0": {
+          "min": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "minecraft:fixed",
+              "name": "*this"
+            },
+            "score": "uuid0"
+          },
+          "max": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "minecraft:fixed",
+              "name": "*this"
+            },
+            "score": "uuid0"
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "uuid1": {
+          "min": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "minecraft:fixed",
+              "name": "*this"
+            },
+            "score": "uuid1"
+          },
+          "max": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "minecraft:fixed",
+              "name": "*this"
+            },
+            "score": "uuid1"
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "uuid2": {
+          "min": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "minecraft:fixed",
+              "name": "*this"
+            },
+            "score": "uuid2"
+          },
+          "max": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "minecraft:fixed",
+              "name": "*this"
+            },
+            "score": "uuid2"
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "uuid3": {
+          "min": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "minecraft:fixed",
+              "name": "*this"
+            },
+            "score": "uuid3"
+          },
+          "max": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "minecraft:fixed",
+              "name": "*this"
+            },
+            "score": "uuid3"
+          }
+        }
+      }
+    }
+  ]
+}

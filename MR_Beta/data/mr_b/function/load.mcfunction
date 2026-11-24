@@ -5,11 +5,16 @@ tellraw @a [""]
 
 function mr_b:shop/registry/init
 
-scoreboard objectives add ui dummy
-# link to minecart to player
-scoreboard objectives add ui.id dummy
+scoreboard objectives add shop_page dummy
+scoreboard objectives add shop_page_extra dummy
+scoreboard objectives add shop_id dummy
+scoreboard players set @e[type=minecraft:chest_minecart,tag=menu_cart] shop_page 1
 
-setblock 0 -64 0 yellow_shulker_box
+
+
+
+
+
 
 scoreboard objectives add temp dummy
 
