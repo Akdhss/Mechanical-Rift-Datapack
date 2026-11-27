@@ -3,6 +3,7 @@
 #runs every tick
 
 kill @e[distance=0..,type=area_effect_cloud]
+function mr_b:ui/lobby/tick
 kill @e[nbt={inGround:1b},tag=!ricochet_arrow,distance=0..,type=minecraft:arrow]
 execute as @e[tag=!checked,distance=0..,type=arrow] run function mr_b:tick_branch/projectile/kill
 execute as @e[tag=!checked,distance=0..,type=small_fireball] run function mr_b:tick_branch/projectile/kill
@@ -34,10 +35,8 @@ execute as @e[tag=wave_mob,distance=0..] at @s run function mr_b:tick_branch/ene
 execute as @e[tag=trap,distance=0..] at @s run function mr_b:tick_branch/trap_tick
 execute as @e[tag=mr_projectile,distance=0..] run function mr_b:tick_branch/projectile/base
 execute as @e[tag=mr_projectile_body,distance=0..] run function mr_b:tick_branch/projectile/body
-execute as @e[tag=ui,distance=0..,type=chest_minecart] run function mr_b:tick_branch/shop_ui/minecart/tick
 execute as @e[name=base_slash,distance=0..] run function mr_b:boss/the_fallen/dismantle/tick
 
-execute as @e[nbt={Item:{components:{"minecraft:use_cooldown":{seconds:1f,cooldown_group:"minecraft:menu_item"}}}},distance=0..,type=item] at @s run function mr_b:tick_branch/menu_settings
 execute as @e[nbt={Item:{components:{"minecraft:use_cooldown":{seconds:1f,cooldown_group:"minecraft:menu_item"}}}},distance=0..,type=item] at @s run kill @s
 
 
@@ -162,5 +161,5 @@ execute as @e[type=item_display,tag=camera,scores={camera_time=30..}] at @s run 
 
 execute if entity @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{shop_item:1b}}}}] as @e[type=minecraft:chest_minecart,tag=menu_cart] at @s run function mr_b:ui/shop/tick
 kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{shop_item:1b}}}}]
-execute as @e[tag=menu_cart,type=minecraft:chest_minecart] at @s as @a if score @s shop_id = @e[tag=menu_cart,type=minecraft:chest_minecart,limit=1,sort=nearest] shop_id at @s run tp @e[tag=menu_cart,type=minecraft:chest_minecart,limit=1,sort=nearest] ~ ~1 ~
+execute as @e[tag=menu_cart,type=minecraft:chest_minecart] at @s as @a if score @s shop_id = @e[tag=menu_cart,type=minecraft:chest_minecart,limit=1,sort=nearest] shop_id at @s anchored eyes run tp @e[tag=menu_cart,type=minecraft:chest_minecart,limit=1,sort=nearest] ^ ^-.4 ^1.6
 

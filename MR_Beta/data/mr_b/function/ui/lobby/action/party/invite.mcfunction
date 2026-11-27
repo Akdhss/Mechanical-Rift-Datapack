@@ -17,7 +17,7 @@ execute as @a[tag=invited] store result score @s mr_player_invite_queue run data
 
 execute as @a[tag=invited] store result storage mr_b:invite id.queue int 1 run scoreboard players get @s mr_player_invite_queue
 
-execute as @a[tag=invited] run function mr_b:general/lobby_menu/party/inviting with storage mr_b:invite id
+execute as @a[tag=invited] run function mr_b:ui/lobby/action/party/inviting with storage mr_b:invite id
 
 tellraw @s ["",{text:"\n"},{text:"\n"},{text:"   ---------------------------"},]
 

@@ -1,38 +1,60 @@
-# Page 1 Items (Run as the Chest Minecart)
+# Item Sets / Classes page (run as the chest minecart)
+
+# Navigation
 item replace entity @s container.8 with minecraft:ender_eye[minecraft:custom_data={shop_item:1b,btn_id:glossary},minecraft:custom_name='Back to Glossary'] 1
-item replace entity @s container.7 with minecraft:enchanted_book[minecraft:custom_data={shop_item:1b,btn_id:glossary},minecraft:custom_name='Back to Glossary'] 1
-item replace entity @s container.16 with minecraft:honey_bottle[minecraft:custom_data={shop_item:1b,btn_id:glossary},minecraft:custom_name='Back to Glossary'] 1
-item replace entity @s container.17 with minecraft:honey_bottle[minecraft:custom_data={shop_item:1b,btn_id:ability},minecraft:custom_name='Back to Glossary'] 1
+item replace entity @s container.7 with minecraft:diamond_chestplate[minecraft:custom_data={shop_item:1b,btn_id:equipment},minecraft:custom_name='Equipment'] 1
+item replace entity @s container.16 with minecraft:enchanted_book[minecraft:custom_data={shop_item:1b,btn_id:enchantment},minecraft:custom_name='Enchantments'] 1
+item replace entity @s container.17 with minecraft:honey_bottle[minecraft:custom_data={shop_item:1b,btn_id:ability},minecraft:custom_name='Abilities'] 1
 
-#navigation bottom left
-item replace entity @s container.25 with minecraft:barrier[minecraft:custom_data={shop_item:1b},tooltip_display={hide_tooltip:true}]
-item replace entity @s container.26 with minecraft:barrier[minecraft:custom_data={shop_item:1b},tooltip_display={hide_tooltip:true}]
+# Frame
+item replace entity @s container.0 with minecraft:black_stained_glass_pane[minecraft:custom_data={shop_item:1b},tooltip_display={hide_tooltip:true}] 1
+item replace entity @s container.6 with minecraft:black_stained_glass_pane[minecraft:custom_data={shop_item:1b},tooltip_display={hide_tooltip:true}] 1
+item replace entity @s container.9 with minecraft:black_stained_glass_pane[minecraft:custom_data={shop_item:1b},tooltip_display={hide_tooltip:true}] 1
+item replace entity @s container.15 with minecraft:black_stained_glass_pane[minecraft:custom_data={shop_item:1b},tooltip_display={hide_tooltip:true}] 1
+item replace entity @s container.18 with minecraft:black_stained_glass_pane[minecraft:custom_data={shop_item:1b},tooltip_display={hide_tooltip:true}] 1
+item replace entity @s container.24 with minecraft:black_stained_glass_pane[minecraft:custom_data={shop_item:1b},tooltip_display={hide_tooltip:true}] 1
+item replace entity @s container.25 with minecraft:barrier[minecraft:custom_data={shop_item:1b},tooltip_display={hide_tooltip:true}] 1
+item replace entity @s container.26 with minecraft:barrier[minecraft:custom_data={shop_item:1b},tooltip_display={hide_tooltip:true}] 1
 
-#black border left side & right side
-item replace entity @s container.0 with minecraft:red_stained_glass_pane[minecraft:custom_data={shop_item:1b},tooltip_display={hide_tooltip:true}]
-item replace entity @s container.9 with minecraft:blue_stained_glass_pane[minecraft:custom_data={shop_item:1b},tooltip_display={hide_tooltip:true}]
-item replace entity @s container.18 with minecraft:lime_stained_glass_pane[minecraft:custom_data={shop_item:1b},tooltip_display={hide_tooltip:true}]
+# DPS — ordered first
+item replace entity @s container.10 with minecraft:netherite_spear[lore=[{text:"DPS / HIGH MOBILITY",color:"red",italic:false},{text:"850 Credits",color:"gold",italic:false},"",{text:"A highly mobile DPS that deals sustained damage by",italic:false},{text:"dashing through enemies and repeatedly striking",italic:false},{text:"while using Descension to reposition and stay on the move.",italic:false}],item_name=[{"text":"Divebomber","color":"red","bold":true}],rarity=epic,custom_data={shop_item:1b,btn_id:3,btn_tag:item_set}] 1
 
-item replace entity @s container.6 with minecraft:black_stained_glass_pane[minecraft:custom_data={shop_item:1b},tooltip_display={hide_tooltip:true}]
-item replace entity @s container.15 with minecraft:black_stained_glass_pane[minecraft:custom_data={shop_item:1b},tooltip_display={hide_tooltip:true}]
-item replace entity @s container.24 with minecraft:black_stained_glass_pane[minecraft:custom_data={shop_item:1b},tooltip_display={hide_tooltip:true}]
+item replace entity @s container.11 with minecraft:bow[lore=[{text:"DPS / RANGED",color:"red",italic:false},{text:"850 Credits",color:"gold",italic:false},"",{text:"A mobile ranged DPS with an enhanced bow for heavier",italic:false},{text:"damage from a safer distance. Its faster, head-focused",italic:false},{text:"ultimate rewards accurate kills by replenishing ammunition",italic:false},{text:"with each target eliminated.",italic:false}],item_name=[{"text":"Windstrider","color":"red","bold":true}],rarity=epic,custom_data={shop_item:1b,btn_id:5,btn_tag:item_set}] 1
 
+item replace entity @s container.12 with minecraft:netherite_axe[lore=[{text:"DPS / BURST",color:"red",italic:false},{text:"850 Credits",color:"gold",italic:false},"",{text:"A mobile burst-DPS class built to mark targets with Ratio",italic:false},{text:"for bonus damage and Nitronic on kills. Whirlwind Dash",italic:false},{text:"helps isolate marked enemies, while its ultimate instantly",italic:false},{text:"kills a target with Ratio and empowers the enchantment.",italic:false},{text:"Collector grants shielding every 8 kills; Overtime gives",italic:false},{text:"a major Strength and healing boost after 35 kills.",italic:false}],item_name=[{"text":"Salaryman","color":"red","bold":true}],rarity=epic,custom_data={shop_item:1b,btn_id:9,btn_tag:item_set}] 1
 
+# TANK
+item replace entity @s container.13 with minecraft:shield[lore=[{text:"TANK / DPS HYBRID",color:"yellow",italic:false},{text:"850 Credits",color:"gold",italic:false},"",{text:"A frontline hybrid that sustains itself and supports allies",italic:false},{text:"with close-range healing and utility. Castle teleports to an",italic:false},{text:"ally and grants both Regeneration and Resistance; Comet Fall",italic:false},{text:"strikes up to four targets with obelisks that damage on",italic:false},{text:"landing and heal while granting Resistance. Both swords",italic:false},{text:"heal nearby allies on hit, while Knockback controls crowds.",italic:false}],item_name=[{"text":"Sanctum","color":"yellow","bold":true}],rarity=epic,custom_data={shop_item:1b,btn_id:4,btn_tag:item_set}] 1
 
-item replace entity @s container.14 with minecraft:diamond[minecraft:custom_data={shop_item:1b,btn_id:1},minecraft:custom_name='"Buy Diamond"'] 1
+# SUPPORT
+item replace entity @s container.14 with minecraft:golden_apple[lore=[{text:"SUPPORT / LONG-RANGE ARTILLERY",color:"green",italic:false},{text:"850 Credits",color:"gold",italic:false},"",{text:"A long-range support that delivers utility where allies",italic:false},{text:"need it most. Its healing bow cleanses, grants Speed and",italic:false},{text:"shielding, while its other bow damages and immobilizes",italic:false},{text:"enemies. Lily revives you after a delay if allies remain",italic:false},{text:"alive, and Season grants Speed at low health.",italic:false}],item_name=[{"text":"Equinox","color":"green","bold":true}],rarity=epic,custom_data={shop_item:1b,btn_id:6,btn_tag:item_set}] 1
 
-# Magenta panes clear unused item slots when changing pages.
+item replace entity @s container.19 with minecraft:packed_ice[lore=[{text:"SUPPORT / CROWD CONTROL",color:"aqua",italic:false},{text:"850 Credits",color:"gold",italic:false},"",{text:"A close-range support that locks down chokepoints and",italic:false},{text:"key enemies through rapid Cold and Freeze application.",italic:false},{text:"Frost Touch applies Cold, which becomes Frozen on a second",italic:false},{text:"application. Hailstorm continuously applies Cold and can",italic:false},{text:"keep Frozen enemies locked down; it also grants Resistance",italic:false},{text:"and enhances [Frost]-type enchantments for allies inside.",italic:false}],item_name=[{"text":"Winter's Queen","color":"aqua","bold":true}],rarity=epic,custom_data={shop_item:1b,btn_id:7,btn_tag:item_set}] 1
+
+item replace entity @s container.20 with minecraft:beacon[lore=[{text:"SUPPORT / HIGH SUSTAIN & MOBILITY",color:"dark_green",italic:false},{text:"850 Credits",color:"gold",italic:false},"",{text:"A general-range support with the highest healing output",italic:false},{text:"and versatile aerial mobility. Cloudburst double-jumps and",italic:false},{text:"grants Slow Falling, refreshed by healing allies with",italic:false},{text:"Bloom Shot, while Guiding Wind dashes and recharges",italic:false},{text:"through enemy kills or ally heals to reach allies",italic:false},{text:"from hard-to-access angles.",italic:false}],item_name=[{"text":"Galeheart","color":"dark_green","bold":true}],rarity=epic,custom_data={shop_item:1b,btn_id:8,btn_tag:item_set}] 1
+
+# GENERAL / FREEMIX
+item replace entity @s container.21 with minecraft:diamond_sword[lore=[{text:"FREEMIX / ALL-ROUNDER",color:"gray",italic:false},{text:"350 Credits",color:"gold",italic:false},"",{text:"An affordable, balanced starter kit with basic protection",italic:false},{text:"and both melee and ranged options to adapt to different",italic:false},{text:"encounters without specializing in a single role.",italic:false}],item_name=[{"text":"Standard","color":"gray","bold":true}],rarity=epic,custom_data={shop_item:1b,btn_id:1,btn_tag:item_set}] 1
+
+item replace entity @s container.22 with minecraft:netherite_chestplate[lore=[{text:"FREEMIX / ALL-ROUNDER",color:"gray",italic:false},{text:"750 Credits",color:"gold",italic:false},"",{text:"An upgraded all-rounder with stronger armor and a shield",italic:false},{text:"for improved survivability, while its sword and bow",italic:false},{text:"maintain flexible melee and ranged combat options.",italic:false}],item_name=[{"text":"Premium","color":"gray","bold":true}],rarity=epic,custom_data={shop_item:1b,btn_id:2,btn_tag:item_set}] 1
+
+# ECONOMY
+item replace entity @s container.23 with minecraft:gold_block[lore=[{text:"ECONOMY / INCOME",color:"gold",italic:false},{text:"1000 Credits",color:"gold",italic:false},"",{text:"An economy-focused kit that builds resources throughout",italic:false},{text:"a run. Its golden equipment and weapons provide a themed",italic:false},{text:"combat loadout, while earning 575 Nitronic each wave",italic:false},{text:"offers a major long-term income advantage.",italic:false}],item_name=[{"text":"Nepo Baby","color":"gold","bold":true}],rarity=epic,custom_data={shop_item:1b,btn_id:10,btn_tag:item_set}] 1
+
+# Fill all unused top-row slots so old page contents cannot remain.
 item replace entity @s container.1 with minecraft:magenta_stained_glass_pane[minecraft:custom_data={shop_item:1b},tooltip_display={hide_tooltip:true}] 1
 item replace entity @s container.2 with minecraft:magenta_stained_glass_pane[minecraft:custom_data={shop_item:1b},tooltip_display={hide_tooltip:true}] 1
 item replace entity @s container.3 with minecraft:magenta_stained_glass_pane[minecraft:custom_data={shop_item:1b},tooltip_display={hide_tooltip:true}] 1
 item replace entity @s container.4 with minecraft:magenta_stained_glass_pane[minecraft:custom_data={shop_item:1b},tooltip_display={hide_tooltip:true}] 1
 item replace entity @s container.5 with minecraft:magenta_stained_glass_pane[minecraft:custom_data={shop_item:1b},tooltip_display={hide_tooltip:true}] 1
-item replace entity @s container.10 with minecraft:magenta_stained_glass_pane[minecraft:custom_data={shop_item:1b},tooltip_display={hide_tooltip:true}] 1
-item replace entity @s container.11 with minecraft:magenta_stained_glass_pane[minecraft:custom_data={shop_item:1b},tooltip_display={hide_tooltip:true}] 1
-item replace entity @s container.12 with minecraft:magenta_stained_glass_pane[minecraft:custom_data={shop_item:1b},tooltip_display={hide_tooltip:true}] 1
-item replace entity @s container.13 with minecraft:magenta_stained_glass_pane[minecraft:custom_data={shop_item:1b},tooltip_display={hide_tooltip:true}] 1
-item replace entity @s container.19 with minecraft:magenta_stained_glass_pane[minecraft:custom_data={shop_item:1b},tooltip_display={hide_tooltip:true}] 1
-item replace entity @s container.20 with minecraft:magenta_stained_glass_pane[minecraft:custom_data={shop_item:1b},tooltip_display={hide_tooltip:true}] 1
-item replace entity @s container.21 with minecraft:magenta_stained_glass_pane[minecraft:custom_data={shop_item:1b},tooltip_display={hide_tooltip:true}] 1
-item replace entity @s container.22 with minecraft:magenta_stained_glass_pane[minecraft:custom_data={shop_item:1b},tooltip_display={hide_tooltip:true}] 1
-item replace entity @s container.23 with minecraft:magenta_stained_glass_pane[minecraft:custom_data={shop_item:1b},tooltip_display={hide_tooltip:true}] 1
+
+execute if entity @p[tag=item_set_bought,tag=player_input_ui] run item replace entity @s container.10 with minecraft:barrier[minecraft:custom_data={shop_item:1b},minecraft:custom_name={"text":"Divebomber - Class Locked","color":"red","italic":false},minecraft:lore=[[{"text":"Unavailable after selecting a class.","color":"dark_red","italic":false}]]] 1
+execute if entity @p[tag=item_set_bought,tag=player_input_ui] run item replace entity @s container.11 with minecraft:barrier[minecraft:custom_data={shop_item:1b},minecraft:custom_name={"text":"Windstrider - Class Locked","color":"red","italic":false},minecraft:lore=[[{"text":"Unavailable after selecting a class.","color":"dark_red","italic":false}]]] 1
+execute if entity @p[tag=item_set_bought,tag=player_input_ui] run item replace entity @s container.12 with minecraft:barrier[minecraft:custom_data={shop_item:1b},minecraft:custom_name={"text":"Salaryman - Class Locked","color":"red","italic":false},minecraft:lore=[[{"text":"Unavailable after selecting a class.","color":"dark_red","italic":false}]]] 1
+execute if entity @p[tag=item_set_bought,tag=player_input_ui] run item replace entity @s container.13 with minecraft:barrier[minecraft:custom_data={shop_item:1b},minecraft:custom_name={"text":"Sanctum - Class Locked","color":"red","italic":false},minecraft:lore=[[{"text":"Unavailable after selecting a class.","color":"dark_red","italic":false}]]] 1
+execute if entity @p[tag=item_set_bought,tag=player_input_ui] run item replace entity @s container.14 with minecraft:barrier[minecraft:custom_data={shop_item:1b},minecraft:custom_name={"text":"Equinox - Class Locked","color":"red","italic":false},minecraft:lore=[[{"text":"Unavailable after selecting a class.","color":"dark_red","italic":false}]]] 1
+execute if entity @p[tag=item_set_bought,tag=player_input_ui] run item replace entity @s container.19 with minecraft:barrier[minecraft:custom_data={shop_item:1b},minecraft:custom_name={"text":"Winter's Queen - Class Locked","color":"red","italic":false},minecraft:lore=[[{"text":"Unavailable after selecting a class.","color":"dark_red","italic":false}]]] 1
+execute if entity @p[tag=item_set_bought,tag=player_input_ui] run item replace entity @s container.20 with minecraft:barrier[minecraft:custom_data={shop_item:1b},minecraft:custom_name={"text":"Galeheart - Class Locked","color":"red","italic":false},minecraft:lore=[[{"text":"Unavailable after selecting a class.","color":"dark_red","italic":false}]]] 1
+execute if entity @p[tag=item_set_bought,tag=player_input_ui] run item replace entity @s container.21 with minecraft:barrier[minecraft:custom_data={shop_item:1b},minecraft:custom_name={"text":"Standard - Class Locked","color":"red","italic":false},minecraft:lore=[[{"text":"Unavailable after selecting a class.","color":"dark_red","italic":false}]]] 1
+execute if entity @p[tag=item_set_bought,tag=player_input_ui] run item replace entity @s container.22 with minecraft:barrier[minecraft:custom_data={shop_item:1b},minecraft:custom_name={"text":"Premium - Class Locked","color":"red","italic":false},minecraft:lore=[[{"text":"Unavailable after selecting a class.","color":"dark_red","italic":false}]]] 1
+execute if entity @p[tag=item_set_bought,tag=player_input_ui] run item replace entity @s container.23 with minecraft:barrier[minecraft:custom_data={shop_item:1b},minecraft:custom_name={"text":"Nepo Baby - Class Locked","color":"red","italic":false},minecraft:lore=[[{"text":"Unavailable after selecting a class.","color":"dark_red","italic":false}]]] 1

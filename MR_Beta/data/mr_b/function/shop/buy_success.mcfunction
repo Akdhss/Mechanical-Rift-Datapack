@@ -20,6 +20,10 @@ execute if score @s mr_shop_item matches 15 run function mr_b:shop/item/item_15
 
 
 # warn-off execute-group
+
+execute as @s[tag=!item_set_bought] if score @s mr_shop_item_set matches 1.. run tag @s add selling_all
+execute as @s[tag=!item_set_bought] if score @s mr_shop_item_set matches 1.. as @s[tag=selling_all] at @s run function mr_b:shop/sell_reset
+
 execute as @s[tag=!item_set_bought] if score @s mr_shop_item_set matches 1 run function mr_b:shop/item_sets/set_1
 execute as @s[tag=!item_set_bought] if score @s mr_shop_item_set matches 2 run function mr_b:shop/item_sets/set_2
 execute as @s[tag=!item_set_bought] if score @s mr_shop_item_set matches 3 run function mr_b:shop/item_sets/set_3

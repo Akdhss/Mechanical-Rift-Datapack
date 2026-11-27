@@ -73,3 +73,4 @@ item replace entity @s container.15 with minecraft:chest[minecraft:custom_data={
 
 
 item replace entity @s container.22 with minecraft:composter[minecraft:custom_data={shop_item:1b,btn_id:sell},item_name=[{"text":"Sell","color":"dark_red",bold:true}]] 1
+execute if entity @p[tag=item_set_bought,tag=player_input_ui] run item replace entity @s container.22 with minecraft:barrier[minecraft:custom_data={shop_item:1b},minecraft:custom_name={"text":"Sell - Function Locked","color":"red","italic":false},minecraft:lore=[[{"text":"Unavailable after the game starts.","color":"dark_red","italic":false}]]]

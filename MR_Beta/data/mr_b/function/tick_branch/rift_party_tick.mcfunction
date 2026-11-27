@@ -129,7 +129,9 @@ execute as @e[predicate=mr_b:item_nondroppable,distance=0..,type=item] at @s on 
 
 execute if entity @e[name=player_spawn,tag=!run_ongoing,tag=!wave_starting,distance=0..] store result score @s mr_player_lobby_menu_check run clear @s nether_star[custom_name=[{"text":"Menu","italic":false}]] 0
 execute if entity @e[name=player_spawn,tag=!run_ongoing,tag=!wave_starting,distance=0..] if score @s mr_player_lobby_menu_check matches 2.. run clear @s nether_star[custom_name=[{"text":"Menu","italic":false}]]
-execute if entity @e[name=player_spawn,tag=!run_ongoing,tag=!wave_starting,distance=0..] run item replace entity @s hotbar.8 with nether_star[food={can_always_eat:1b,nutrition:0,saturation:0},consumable={consume_seconds:99999,animation:none},use_cooldown={seconds:1,cooldown_group:menu_item},custom_name=[{"text":"Menu","italic":false}],rarity=epic,attribute_modifiers=[{type:block_interaction_range,amount:-4.5,slot:mainhand,operation:add_value,id:"1780659174736"}]]
+
+execute if entity @e[name=player_spawn,tag=!run_ongoing,tag=!wave_starting,distance=0..] run item replace entity @s hotbar.8 with nether_star[food={can_always_eat:1b,nutrition:0,saturation:0},consumable={consume_seconds:99999,animation:none},use_cooldown={seconds:1,cooldown_group:menu_item},custom_name=[{"text":"Lobby Menu","italic":false}],lore=[{text:"Hold this, then right-click the chest minecart.",italic:false,color:"gray"}],rarity=epic,attribute_modifiers=[{type:block_interaction_range,amount:-4.5,slot:mainhand,operation:add_value,id:"1780659174736"}],custom_data={lobby_launcher:1b}]
+
 execute if entity @e[name=player_spawn,tag=!run_ongoing,tag=!wave_starting,distance=0..] run advancement revoke @s only mr_b:lobby_setting
 execute if score @s mr_player_invite_id matches 0 run scoreboard players add @s mr_player_invite_expire 1
 
@@ -290,6 +292,8 @@ execute if score @s mr_player_jump_check matches 0 unless predicate mr_b:on_grou
 execute if items entity @s player.cursor *[minecraft:custom_data~{shop_item:1b}] at @s run function mr_b:ui/shop/player_input
 execute if items entity @s container.* *[minecraft:custom_data~{shop_item:1b}] as @e[tag=menu_cart,distance=0..,type=minecraft:chest_minecart] at @s run function mr_b:ui/shop/tick
 execute if items entity @s container.* *[minecraft:custom_data~{shop_item:1b}] run clear @s *[minecraft:custom_data~{shop_item:1b}]
+
+execute at @s run function mr_b:ui/lobby/player_tick
 
 scoreboard players operation *this uuid0 = @s uuid0
 scoreboard players operation *this uuid1 = @s uuid1

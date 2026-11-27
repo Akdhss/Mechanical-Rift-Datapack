@@ -29,3 +29,6 @@ item replace entity @s container.20 with minecraft:magenta_stained_glass_pane[mi
 item replace entity @s container.21 with minecraft:magenta_stained_glass_pane[minecraft:custom_data={shop_item:1b},tooltip_display={hide_tooltip:true}] 1
 item replace entity @s container.22 with minecraft:magenta_stained_glass_pane[minecraft:custom_data={shop_item:1b},tooltip_display={hide_tooltip:true}] 1
 item replace entity @s container.23 with minecraft:magenta_stained_glass_pane[minecraft:custom_data={shop_item:1b},tooltip_display={hide_tooltip:true}] 1
+
+execute if entity @p[tag=item_set_bought,tag=!class_freemix,tag=player_input_ui] run item replace entity @s container.1 with minecraft:barrier[minecraft:custom_data={shop_item:1b},minecraft:custom_name={"text":"Castle - Class Locked","color":"red","italic":false},minecraft:lore=[[{"text":"Unavailable after selecting a class.","color":"dark_red","italic":false}]]] 1
+execute if entity @p[tag=item_set_bought,tag=!class_freemix,tag=player_input_ui] run item replace entity @s container.2 with minecraft:barrier[minecraft:custom_data={shop_item:1b},minecraft:custom_name={"text":"Comet Fall - Class Locked","color":"red","italic":false},minecraft:lore=[[{"text":"Unavailable after selecting a class.","color":"dark_red","italic":false}]]] 1

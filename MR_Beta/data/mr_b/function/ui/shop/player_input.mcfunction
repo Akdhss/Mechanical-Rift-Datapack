@@ -1,22 +1,25 @@
-execute unless items entity @s player.cursor *[tooltip_display={hide_tooltip:true}] run playsound mr_b:player/generic/deploy/player_deploy
+tag @s add player_input_ui
+execute unless items entity @s player.cursor *[tooltip_display={hide_tooltip:true}] run playsound minecraft:ui.button.click master @s ~ ~ ~ 0.6 1.2
 
-execute as @e[type=minecraft:chest_minecart,tag=menu_cart] if score @s shop_id = @p shop_id run scoreboard players operation @p shop_page = @s shop_page
-execute as @e[type=minecraft:chest_minecart,tag=menu_cart] if score @s shop_id = @p shop_id run scoreboard players operation @p shop_page_extra = @s shop_page_extra
 
-execute if items entity @s player.cursor *[minecraft:custom_data~{shop_item:1b,btn_id:glossary}] as @e[type=minecraft:chest_minecart,tag=menu_cart] if score @s shop_id = @p shop_id run scoreboard players set @s shop_page 1
-execute if items entity @s player.cursor *[minecraft:custom_data~{shop_item:1b,btn_id:equipment}] as @e[type=minecraft:chest_minecart,tag=menu_cart] if score @s shop_id = @p shop_id run scoreboard players set @s shop_page 2
-execute if items entity @s player.cursor *[minecraft:custom_data~{shop_item:1b,btn_id:enchantment}] as @e[type=minecraft:chest_minecart,tag=menu_cart] if score @s shop_id = @p shop_id run scoreboard players set @s shop_page 3
-execute if items entity @s player.cursor *[minecraft:custom_data~{shop_item:1b,btn_id:enchantment}] as @e[type=minecraft:chest_minecart,tag=menu_cart] if score @s shop_id = @p shop_id run scoreboard players set @s shop_page_extra 1
-execute if items entity @s player.cursor *[minecraft:custom_data~{shop_item:1b,btn_id:ability}] as @e[type=minecraft:chest_minecart,tag=menu_cart] if score @s shop_id = @p shop_id run scoreboard players set @s shop_page 4
-execute if items entity @s player.cursor *[minecraft:custom_data~{shop_item:1b,btn_id:ability}] as @e[type=minecraft:chest_minecart,tag=menu_cart] if score @s shop_id = @p shop_id run scoreboard players set @s shop_page_extra 1
-execute if items entity @s player.cursor *[minecraft:custom_data~{shop_item:1b,btn_id:consumable}] as @e[type=minecraft:chest_minecart,tag=menu_cart] if score @s shop_id = @p shop_id run scoreboard players set @s shop_page 5
-execute if items entity @s player.cursor *[minecraft:custom_data~{shop_item:1b,btn_id:item_set}] as @e[type=minecraft:chest_minecart,tag=menu_cart] if score @s shop_id = @p shop_id run scoreboard players set @s shop_page 6
+execute as @e[tag=menu_cart,distance=0..,type=minecraft:chest_minecart] if score @s shop_id = @p shop_id run scoreboard players operation @p shop_page = @s shop_page
+execute as @e[tag=menu_cart,distance=0..,type=minecraft:chest_minecart] if score @s shop_id = @p shop_id run scoreboard players operation @p shop_page_extra = @s shop_page_extra
+
+execute if items entity @s player.cursor *[minecraft:custom_data~{shop_item:1b,btn_id:glossary}] as @e[tag=menu_cart,distance=0..,type=minecraft:chest_minecart] if score @s shop_id = @p shop_id run scoreboard players set @s shop_page 1
+execute if items entity @s player.cursor *[minecraft:custom_data~{shop_item:1b,btn_id:equipment}] as @e[tag=menu_cart,distance=0..,type=minecraft:chest_minecart] if score @s shop_id = @p shop_id run scoreboard players set @s shop_page 2
+execute if items entity @s player.cursor *[minecraft:custom_data~{shop_item:1b,btn_id:enchantment}] as @e[tag=menu_cart,distance=0..,type=minecraft:chest_minecart] if score @s shop_id = @p shop_id run scoreboard players set @s shop_page 3
+execute if items entity @s player.cursor *[minecraft:custom_data~{shop_item:1b,btn_id:enchantment}] as @e[tag=menu_cart,distance=0..,type=minecraft:chest_minecart] if score @s shop_id = @p shop_id run scoreboard players set @s shop_page_extra 1
+execute if items entity @s player.cursor *[minecraft:custom_data~{shop_item:1b,btn_id:ability}] as @e[tag=menu_cart,distance=0..,type=minecraft:chest_minecart] if score @s shop_id = @p shop_id run scoreboard players set @s shop_page 4
+execute if items entity @s player.cursor *[minecraft:custom_data~{shop_item:1b,btn_id:ability}] as @e[tag=menu_cart,distance=0..,type=minecraft:chest_minecart] if score @s shop_id = @p shop_id run scoreboard players set @s shop_page_extra 1
+execute if items entity @s player.cursor *[minecraft:custom_data~{shop_item:1b,btn_id:consumable}] as @e[tag=menu_cart,distance=0..,type=minecraft:chest_minecart] if score @s shop_id = @p shop_id run scoreboard players set @s shop_page 5
+execute if items entity @s player.cursor *[minecraft:custom_data~{shop_item:1b,btn_id:item_set}] as @e[tag=menu_cart,distance=0..,type=minecraft:chest_minecart] if score @s shop_id = @p shop_id run scoreboard players set @s shop_page 6
 
 execute if items entity @s player.cursor *[minecraft:custom_data~{btn_tag:nav}] run function mr_b:ui/shop/nav/switch_page
 execute if items entity @s player.cursor *[minecraft:custom_data~{btn_tag:equipment}] run function mr_b:ui/shop/buy/equipment
 execute if items entity @s player.cursor *[minecraft:custom_data~{btn_tag:enchantment}] run function mr_b:ui/shop/buy/enchantment
 execute if items entity @s player.cursor *[minecraft:custom_data~{btn_tag:ability}] run function mr_b:ui/shop/buy/ability
 execute if items entity @s player.cursor *[minecraft:custom_data~{btn_tag:consumable}] run function mr_b:ui/shop/buy/consumable
+execute if items entity @s player.cursor *[minecraft:custom_data~{btn_tag:item_set}] run function mr_b:ui/shop/buy/item_set
 
 execute if items entity @s player.cursor *[minecraft:custom_data~{btn_id:sell}] run trigger mr_shop_book_index set -1
 
@@ -26,7 +29,9 @@ execute if items entity @s player.cursor *[minecraft:custom_data~{shop_item:1b}]
 
 
 
-execute as @e[type=minecraft:chest_minecart,tag=menu_cart] at @s run function mr_b:ui/shop/tick
+execute as @e[tag=menu_cart,distance=0..,type=minecraft:chest_minecart] at @s run function mr_b:ui/shop/tick
 
 scoreboard players reset @s shop_page
 scoreboard players reset @s shop_page_extra
+
+tag @s remove player_input_ui

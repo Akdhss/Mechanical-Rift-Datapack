@@ -1,3 +1,5 @@
+# Runs as the player. teleport.mcfunction sends you to the run spawn when mr_player_tp_menu_toggle >= 1, else the lobby.
+scoreboard players reset @s mr_player_tp_menu_toggle
 
 effect give @s blindness 1 255 true
 
@@ -11,3 +13,4 @@ execute unless score @s mr_player_tp_menu_toggle matches 1.. run tp @s @n[name=l
 execute if score @s mr_player_tp_menu_toggle matches 1.. run tp @s @n[name=player_spawn,distance=0..,type=marker]
 
 playsound entity.player.teleport master @s ~ ~ ~ 5
+

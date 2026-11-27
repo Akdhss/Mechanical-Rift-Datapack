@@ -4,6 +4,7 @@ tellraw @a ["",{text:" ",color:"white"},{text:"Mechanical Rift: BETA Datapack",c
 tellraw @a [""]
 
 function mr_b:shop/registry/init
+function mr_b:ui/lobby/init
 
 scoreboard objectives add shop_page dummy
 scoreboard objectives add shop_page_extra dummy
